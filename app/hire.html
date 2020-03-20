@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House of Angular</title>
+    <meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" default-src="unsafe-inline">
+    <link href="/dist/style.bundle.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header__top-bar">
+        <div class="header__logo-container">
+            <a href="/home">
+                <img class="header__logo" src="./assets/Logo%20-%20main%20color.svg" alt="House of Angular">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li class="nav__item"><a class="nav__item-link" href="/knowledgebase">Baza wiedzy</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/open-source">Open source</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/blog">Blog</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/hire">Hire Us</a></li>
+            </ul>
+        </nav>
+        <div class="header__login-button-container">
+            <button class="button header__login-button button--accented">Login</button>
+        </div>
+    </div>
+</header>
+<div class="main-post__banner banner__hire">
+    <div class="main-post">
+        <div class="main-post__title-container">
+            <h1 class="main-post__title">Angular House is part of ValueAdd company</h1>
+        </div>
+        <div class="main-post__description-container">
+            <p class="main-post__description">Over 92% of computers are infected with Adware and spyware. Such
+                software is rarely accompanied by uninstall utility and even when it is it almost always leaves
+                broken Windows Registry keys behind it.</p>
+        </div>
+        <div class="main-post__button-container">
+            <button class="button header__button button--accented">Write us</button>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <main class="content">
+        <div class="sections">
+            <section class="section section--our-passion">
+                <div class="section__row section__row--fdc section__row--first">
+                    <h3 class="section__title">Our Passion</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="section__row">
+                    <div class="section__column section__column--with-pattern">
+                        <img src="./assets/icon_development.svg" alt="Development" class="section__column-icon">
+                        <h5 class="section__column-title">Development</h5>
+                        <span class="section__column-description">Living in today's metropolitan world of cellular phones, mobile computers.</span>
+                    </div>
+                    <div class="section__column section__column--with-pattern">
+                        <img src="./assets/icon_audyt.svg" alt="Audyt" class="section__column-icon">
+                        <h5 class="section__column-title">Audyt</h5>
+                        <span class="section__column-description">It is a good idea to think of your PC as an office. it stores files, programs, pictures.</span>
+                    </div>
+                    <div class="section__column section__column--with-pattern">
+                        <img src="./assets/icon_consulting.svg" alt="Consulting" class="section__column-icon">
+                        <h5 class="section__column-title">Consulting</h5>
+                        <span class="section__column-description">Last month, my wife, Anne Doe, took me to Las Vegos because she had to go.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--write-us">
+                <div class="section__row section__row--fdc section__row--first">
+                    <h3 class="section__title">Write Us</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="section__row section__row--with-box">
+                    <article class="section__box section__box--framed">
+                        <h5 class="section__box-title">Potrzebujesz pomocy z projektem?</h5>
+                        <span class="section__box-subtitle">Napisz do nas, jesteśmy pofesjonalistami w temacie programowania, consultingu i audytu IT</span>
+                        <form>
+                            <div class="form-field">
+                                <label class="section__box-label" for="name">Imię i nazwisko</label>
+                                <input type="text" id="name" class="common-input input"
+                                       placeholder="Jan Kowalski" name="name">
+                            </div>
+                            <div class="form-field">
+                                <label class="section__box-label" for="email">Adres e-mail</label>
+                                <input type="email" id="email" class="common-input input"
+                                       placeholder="jan.kowalski@mojafirma.pl" name="email">
+                            </div>
+                            <div class="form-field">
+                                <label class="section__box-label" for="phone">Numer telefonu</label>
+                                <input type="text" id="phone" class="common-input input"
+                                       placeholder="+48 285 285 687" name="phone">
+                            </div>
+                            <div class="form-field">
+                                <label class="section__box-label" for="topic">Temat</label>
+                                <select id="topic" class="common-input select" name="topic">
+                                    <option name="topic-consulting" value="topic-consulting">Consulting</option>
+                                    <option name="topic-audyt" value="topic-audyt">Audyt</option>
+                                    <option name="topic-development" value="topic-development">Development</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label class="section__box-label" for="message">Treść</label>
+                                <textarea id="message" class="common-input textarea"
+                                          placeholder="Tutaj wpisz treść wiadomości..." name="message"></textarea>
+                            </div>
+                            <div class="form-field form-field--checkbox">
+                                <input type="checkbox" id="accept" class="common-input checkbox" name="accept">
+                                <label class="section__box-label" for="accept">
+                                    <span>Wysyłając wiadomość zgadzasz się na przekazanie nam Twoich danych osobowych</span>
+                                </label>
+                            </div>
+                            <div class="form-last-row">
+                                <input type="submit" class="button button--accented" value="Wyślij">
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section--trusted-us">
+                <div class="section__row section__row--fdc section__row--first">
+                    <h3 class="section__title">Trusted Us</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="section__row section__row--with-box">
+                    <article class="section__box section__box--grid grid">
+                        <div class="grid__item">
+                            <img src="./assets/Logo%201.png" alt="Coca Cola" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%202.png" alt="Amazon" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%203.png" alt="Adidas" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%204.png" alt="Company name" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%205.png" alt="Nvidia" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%206.png" alt="Drupal" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%207.png" alt="Cerner" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%208.png" alt="Premier League" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%209.png" alt="Rolex" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%2010.png" alt="Fakro" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%2011.png" alt="Mobil" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%2012.png" alt="Twilio" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%2013.png" alt="LG" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%2014.png" alt="Google" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%2015.png" alt="Canon" class="grid__item-logo">
+                        </div>
+                        <div class="grid__item">
+                            <img src="./assets/Logo%2016.png" alt="Skype" class="grid__item-logo">
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__logo">
+                    <img src="./assets/HouseofAngular.svg" alt="House of Angular">
+                </div>
+                <div class="footer__shortcuts">
+                    <ul>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Baza wiedzy</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Open source</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Blog</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Hire Us</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="icon icon--facebook"></i></a>
+                    <a href="#"><i class="icon icon--github"></i></a>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__copyright">
+                    <span>Copyirght &copy; 2013-2019 ValueAdd. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+</body>
+</html>

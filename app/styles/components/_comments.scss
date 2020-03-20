@@ -1,0 +1,64 @@
+.comments {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.comments__counter {
+    color: $accents-color;
+}
+
+.comments__title {
+    margin-bottom: 3rem;
+}
+
+.comments__add-comment {
+    @include flex(flex-start, flex-start);
+}
+
+.comments__add-comment-box {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.comments__textarea {
+    @include size(100%, 10rem);
+    padding: 2rem;
+    border: $main-border;
+    resize: none;
+
+    &::placeholder {
+        font-weight: 100;
+        color: $secondary-color;
+    }
+}
+
+.comments__textarea-bar {
+    @include flex(space-between, center);
+    @include size(100%, 6rem);
+    padding: 1rem;
+    background-color: $light-blue-color;
+    border: $main-border;
+    border-top-width: 0;
+}
+
+.comments__textarea-bar-side {
+    @include flex(flex-start, center);
+}
+
+.comments__button-separator {
+    @include size(0.1rem, 2rem);
+    background-color: $border-color;
+    margin: 0 1.6rem;
+}
+
+.comments__characters-limit {
+    font-weight: 400;
+    margin-right: 3rem;
+}
+
+.comments__add-comment-button {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}

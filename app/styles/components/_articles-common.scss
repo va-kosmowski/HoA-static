@@ -1,0 +1,116 @@
+.knowledgebase__articles {
+    margin-top: 2.7rem;
+}
+
+.articles__header {
+    @include flex(space-between, center);
+    width: 100%;
+}
+
+.articles__container {
+    width: 100%;
+}
+
+.article {
+    @include flex(flex-start, flex-start);
+    margin-top: 2rem;
+    width: 100%;
+    color: $main-color;
+    border: $main-border;
+    background-color: #fff;
+
+    &:hover {
+        background-color: $article-hover-background;
+    }
+
+    a {
+        &:link,
+        &:visited {
+            color: inherit;
+        }
+    }
+}
+
+.article__image {
+    @include flex(center, center);
+    overflow: hidden;
+}
+
+.article__content {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    width: 100%;
+}
+
+.article__title {
+    &:hover,
+    &:active {
+        color: $main-color-hover;
+    }
+}
+
+.article__description {
+    font-weight: 300;
+}
+
+.article__footer {
+    @include flex(space-between, center);
+    width: 100%;
+}
+
+.article__footer-separator {
+    @include size(.1rem, 1rem);
+    background-color: $border-color;
+}
+
+.article__author {
+    @include flex(flex-start, center);
+    cursor: pointer;
+
+    > .author-avatar {
+        @include size(3.5rem);
+        margin-right: 1rem;
+    }
+
+    > .author-anchor {
+        color: inherit;
+    }
+}
+
+.article__length {
+    @include flex(flex-start, center);
+
+    > .icon--time {
+        @include size(1.6rem);
+        margin-right: .8rem;
+    }
+}
+
+.article__level-span {
+    font-weight: 500;
+}
+
+.article__underline {
+    @include size(6rem, .3rem);
+    margin-top: 2rem;
+    background-color: $accents-color;
+}
+
+.article__statistics {
+    @include flex(flex-start, flex-start);
+    color: $secondary-color;
+}
+
+.article__statistic-column {
+    @include flex(flex-start, center);
+    margin: .5rem 5.6rem 0 0;
+}
+
+.article__statistic-number {
+    font-weight: 700;
+}
+
+.article__statistic-text {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}

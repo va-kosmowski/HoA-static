@@ -1,0 +1,51 @@
+.post {
+    margin-top: 3rem;
+}
+
+.post__header,
+.post__title {
+    margin-bottom: 2rem;
+}
+
+.post__duration-and-level {
+    @include flex(flex-start, center);
+
+    > * {
+        margin-right: 2.4rem;
+    }
+}
+
+.post__main {
+    width: 100%;
+}
+
+.post__banner {
+    @include size(100%, 36rem);
+    margin-bottom: 2rem;
+    background: url('../../assets/blog-post-banner.png') center / cover;
+}
+
+.post__contents {
+    > p + p {
+        margin-top: 3rem;
+    }
+
+    > p:not(.contents--bold) {
+        font-weight: 300;
+    }
+}
+
+.post-tags {
+    width: 100%;
+    padding: 3rem 0;
+    border-bottom: $main-border;
+}
+
+.post-tags__container {
+    display: inline-flex;
+}
+
+.post-tags__text {
+    margin-right: 2rem;
+}
+

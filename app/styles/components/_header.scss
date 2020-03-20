@@ -1,0 +1,55 @@
+$menu-item-vertical-padding: 1rem;
+$menu-item-border-width: .3rem;
+
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    overflow: hidden;
+    min-width: $layout-min-width;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(20, 35, 62, 0.1);
+
+    &--homepage {
+        background-image: $homepage-background;
+        box-shadow: none;
+    }
+
+    & + * {
+        margin-top: $header-height;
+    }
+}
+
+.header--homepage {
+    .header__logo {
+        filter: invert(1) brightness(3);
+    }
+}
+
+.header--top-bar-only {
+    box-shadow: $light-shadow;
+}
+
+.header__top-bar {
+    @include flex(space-between, center);
+    min-width: inherit;
+    width: inherit;
+    max-width: $layout-max-width;
+    height: $header-height;
+}
+
+.header__logo-container {
+    @include flex(center, center);
+}
+
+.header__logo {
+    pointer-events: none;
+    user-select: none;
+}
+
+.header__login-button-container {
+    padding: 1rem;
+}

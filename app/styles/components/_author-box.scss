@@ -1,0 +1,27 @@
+.author-box {
+    @include flex(flex-start, center);
+    flex-direction: column;
+    padding: 3rem;
+    margin: 1.2rem 0 3.6rem;
+    border: $main-border;
+
+    + .recommended-articles-_title {
+        margin-top: 0;
+    }
+}
+
+.author-box__avatar {
+    @include size(10rem);
+    margin-bottom: 2rem;
+}
+
+.author-box__author-spacer {
+    @include size(6rem, 0.3rem);
+    margin-top: 0.6rem;
+    border: 0;
+    background-color: $accents-color;
+}
+
+.author-box__description {
+    text-align: center;
+}

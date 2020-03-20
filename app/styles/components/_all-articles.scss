@@ -1,0 +1,58 @@
+.knowledgebase__articles {
+    .all-articles__article {
+        box-shadow: $light-shadow;
+    }
+}
+
+.all-articles__title {
+    margin: 3rem 0 1.2rem;
+}
+
+.all-articles__counter {
+    color: $accents-color;
+}
+
+.all-articles__sorting {
+    padding: .4rem 3rem .4rem 1rem;
+    background-color: transparent;
+    position: relative;
+    margin: 1.8rem -.6rem 0 0;
+    cursor: pointer;
+}
+
+.all-articles__icon--expand {
+    position: absolute;
+    right: .9rem;
+    top: .7rem;
+}
+
+.all-articles__article-image {
+    @include size(26.8rem, 25rem);
+
+    > img {
+        height: 100%;
+    }
+}
+
+.all-articles__article-content {
+    padding: 2.8rem 3rem 2rem;
+    flex: 1;
+}
+
+.blog__article .all-articles__article-title {
+    padding: 1.2rem 2.5rem 1.2rem 0;
+}
+
+.knowledgebase__article .all-articles__article-title {
+    padding: 2rem 2.5rem 0 0;
+}
+
+.all-articles__article-footer {
+    margin-top: 1.3rem;
+    padding-right: 4.5rem;
+}
+
+.all-articles__pagination-container {
+    width: 100%;
+    margin-top: 3rem;
+}

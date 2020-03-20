@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House of Angular</title>
+    <meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" default-src="unsafe-inline">
+    <link href="/dist/style.bundle.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header header--top-bar-only">
+        <div class="header__top-bar">
+            <div class="header__logo-container">
+                <a href="/home">
+                    <img class="header__logo" src="./assets/Logo%20-%20main%20color.svg" alt="House of Angular">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="nav__item"><a class="nav__item-link" href="/knowledgebase">Baza wiedzy</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="/open-source">Open source</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="/blog">Blog</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="/hire">Hire Us</a></li>
+                </ul>
+            </nav>
+            <div class="header__login-button-container">
+                <button class="button header__login-button button--accented">Login</button>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="breadcrumbs">
+            <a class="breadcrumbs__link" href="#">Strona główna</a>
+            <span class="breadcrumbs__divider"> > </span>
+            <span class="breadcrumbs__current-location">Baza wiedzy</span>
+        </div>
+        <div class="articles knowledgebase__articles">
+            <section class="main-column">
+                <div class="search-box">
+                    <div class="search-box__row">
+                        <div class="form-field">
+                            <input type="text" placeholder="Wyszkuja artykuł w bazie wiedzy"
+                                   name="search" class="common-input input">
+                            <i class="icon search-box__search-icon icon--search"></i>
+                        </div>
+                    </div>
+                    <div class="search-box__row">
+                        <div class="search-box__frequent-tags">
+                            <span class="search-box__frequent-tags-title">Polecane tagi:</span>
+                            <span class="chip">automated-refactoring</span>
+                            <span class="chip">swift</span>
+                            <span class="chip">refactoring</span>
+                        </div>
+                        <div class="search-box__advanced-search">
+                            <a href="#">
+                                <span>Wyszukiwanie zaawansowane <i class="icon icon--expand search-box__icon--expand"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <header class="all-articles__header articles__header">
+                    <h4 class="all-articles__title articles__title">
+                        Artykułów w bazie: <span class="all-articles__counter">421</span>
+                    </h4>
+                    <button class="all-articles__sorting articles__sorting">
+                        <span>Najnowsze <i class="icon all-articles__icon--expand icon--expand"></i></span>
+                    </button>
+                </header>
+                <div class="all-articles__container articles__container">
+                    <article class="all-articles__article article knowledgebase__article">
+                        <aside class="all-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="all-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="all-articles__article article knowledgebase__article">
+                        <aside class="all-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="all-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="all-articles__article article knowledgebase__article">
+                        <aside class="all-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="all-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="all-articles__article article knowledgebase__article">
+                        <aside class="all-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="all-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="all-articles__article article knowledgebase__article">
+                        <aside class="all-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="all-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <div class="all-articles__pagination-container">
+                        <div class="all-articles__pagination pagination">
+                            <a href="#" class="pagination__item pagination__item--first"></a>
+                            <a href="#" class="pagination__item">1</a>
+                            <a href="#" class="pagination__item">2</a>
+                            <a href="#" class="pagination__item">3</a>
+                            <a href="#" class="pagination__item">...</a>
+                            <a href="#" class="pagination__item">31</a>
+                            <a href="#" class="pagination__item pagination__item--last"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="side-column">
+                <div class="share-article">
+                    <h4 class="share-article__title">Podziel się wiedzą!</h4>
+                    <p class="share-article__description">Every large design company whether it’s a multi-national branding corporation or a regular down at heel tatty.</p>
+                    <button class="button button--white">Add article</button>
+                </div>
+                <header class="recommended-articles__header articles__header">
+                    <h4 class="recommended-articles__title articles__title">Polecane artykuły</h4>
+                </header>
+                <div class="recommended-articles__container articles__container">
+                    <article class="recommended-articles__article article knowledgebase__article">
+                        <aside class="recommended-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="recommended-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="recommended-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="recommended-articles__article-footer article__footer">
+                                <div class="recommended-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="recommended-articles__article article knowledgebase__article">
+                        <aside class="recommended-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="recommended-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="recommended-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="recommended-articles__article-footer article__footer">
+                                <div class="recommended-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="recommended-articles__article article knowledgebase__article">
+                        <aside class="recommended-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="recommended-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="recommended-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="recommended-articles__article-footer article__footer">
+                                <div class="recommended-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="recommended-articles__article article knowledgebase__article">
+                        <aside class="recommended-articles__article-content article__content">
+                            <a href="#article">
+                                <div class="recommended-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="recommended-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <div class="article__underline"></div>
+                            </a>
+                            <div class="recommended-articles__article-footer article__footer">
+                                <div class="recommended-articles__article-statistics article__statistics">
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">5</h4>
+                                        <span class="article__statistic-text">Vote</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">12</h4>
+                                        <span class="article__statistic-text">Answers</span>
+                                    </div>
+                                    <div class="article__statistic-column">
+                                        <h4 class="article__statistic-number">119</h4>
+                                        <span class="article__statistic-text">Views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__logo">
+                    <img src="./assets/HouseofAngular.svg" alt="House of Angular">
+                </div>
+                <div class="footer__shortcuts">
+                    <ul>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Baza wiedzy</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Open source</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Blog</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Hire Us</a></li>
+                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="icon icon--facebook"></i></a>
+                    <a href="#"><i class="icon icon--github"></i></a>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__copyright">
+                    <span>Copyirght &copy; 2013-2019 ValueAdd. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+</body>
+</html>

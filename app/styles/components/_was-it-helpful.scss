@@ -1,0 +1,38 @@
+.was-it-helpful {
+    width: 100%;
+    padding: 3rem 10rem;
+    margin-top: 3rem;
+    border-top: $main-border;
+    border-bottom: $main-border;
+}
+
+.was-it-helpful__box {
+    @include flex(center, center);
+    flex-direction: column;
+    padding: 5rem 12rem;
+    border: $main-border;
+}
+
+.was-it-helpful__question {
+    margin-bottom: 2rem;
+}
+
+.was-it-helpful__buttons {
+    @include flex(flex-start, center);
+
+    button + button {
+        margin-left: 1rem;
+    }
+}
+
+.was-it-helpful__button {
+    @include size(4rem);
+    @include flex(center, center);
+    border: $main-border;
+    border-radius: 0.4rem;
+    background-color: transparent;
+
+    i.icon {
+        @include size(2.2rem);
+    }
+}

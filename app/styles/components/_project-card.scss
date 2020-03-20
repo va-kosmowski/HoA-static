@@ -1,0 +1,64 @@
+.project-card--accents {
+    background-image: linear-gradient(230deg, $accents-color-alternative, $accents-color);
+
+    .project-card__tag,
+    .project-card__button {
+        color: $accents-color;
+    }
+}
+
+.project-card--primary {
+    background-image: linear-gradient(230deg, $main-color-alternative, $main-color);
+
+    .project-card__tag,
+    .project-card__button {
+        color: $main-color;
+    }
+}
+
+.project-card {
+    width: 58rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    color: #fff;
+
+    .project-card__description-underline {
+        background-color: currentColor;
+        margin-bottom: 3rem;
+    }
+}
+
+.project-card__tag-list {
+    margin-bottom: 2.2rem;
+
+    .project-card__tag {
+        background-color: #fff;
+    }
+}
+
+.project-card__title {
+    @extend .h1;
+}
+
+.project-card__used-technologies {
+    font-weight: bold;
+}
+
+.project-card__statistics {
+    @include flex(flex-start, stretch);
+    margin-top: 1.5rem;
+}
+
+.project-card__statistics-column {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.project-card__statistics-label {
+    font-size: 1.4rem;
+}
+
+.project-card__button {
+    margin-top: 3rem;
+}

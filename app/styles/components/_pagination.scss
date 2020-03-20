@@ -1,0 +1,55 @@
+.pagination {
+    @include flex(center, center);
+    min-width: 30rem;
+}
+
+.pagination__item {
+    @include flex(center, center);
+    @include size(3.5rem);
+    font-weight: 700;
+    color: $secondary-color;
+    border: $main-border;
+    border-radius: 0.5rem;
+    transition: 0.25s ease-in-out;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &:hover {
+        background-color: $accents-color;
+        border-color: $accents-color;
+        color: #fff;
+    }
+}
+
+.pagination__item--first,
+.pagination__item--last {
+    position: relative;
+    @include flex(center, center);
+
+    &::before {
+        content: '';
+        position: absolute;
+        @include size(.6rem);
+        border: .2rem solid;
+        border-left: 0;
+        border-top: 0;
+    }
+}
+
+.pagination__item--first {
+    &::before {
+        transform: rotate(135deg);
+        margin-left: .2rem;
+    }
+}
+
+.pagination__item--last {
+    &::before {
+        transform: rotate(315deg);
+        margin-left: -.2rem;
+    }
+}
+
+

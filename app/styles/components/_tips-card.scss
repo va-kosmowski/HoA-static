@@ -1,0 +1,38 @@
+.tips-card {
+    width: 100%;
+    @include flex(flex-start, stretch);
+
+    &--illustration-on-left {
+        flex-direction: row-reverse;
+    }
+
+    &--dark {
+        .tips-card__container--right {
+            background-color: $darker-color;
+            color: #fff;
+        }
+    }
+}
+
+.tips-card__container {
+    width: 50%;
+
+    &--right {
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        padding: 5rem;
+        background-color: #fff;
+    }
+}
+
+.tips-card__title-underline {
+    margin: 2rem 0;
+}
+
+.tips-card__illustration {
+    height: 100%;
+}
+
+.tips-card_button {
+    margin-top: 3rem;
+}

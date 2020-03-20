@@ -1,0 +1,211 @@
+.sections {
+    @include flex(center, flex-start);
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.sections--home {
+    position: relative;
+
+    .section__row {
+        margin-top: 6rem;
+
+        & + .section__row {
+            margin-top: 4rem;
+        }
+    }
+
+    .article {
+        position: relative;
+        margin-top: 0;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+}
+
+.sections__patterns {
+    width: inherit;
+    position: absolute;
+
+    .sections__pattern {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.sections__patterns--home {
+    .sections__pattern {
+        width: 56%;
+
+        &--left {
+            left: -17rem;
+            top: 14rem;
+        }
+
+        &--right {
+            transform: rotate(-45deg);
+            right: -25rem;
+            top: 3rem;
+        }
+    }
+}
+
+.sections__patterns--our-projects {
+    .sections__pattern {
+        width: 56%;
+        left: 50%;
+        top: 9rem;
+        transform: translateX(-50%) rotate(-45deg);
+    }
+}
+
+.sections__patterns--blog {
+    .sections__pattern {
+        transform: rotate(180deg);
+        left: -17rem;
+        top: 14rem;
+    }
+}
+
+.section {
+    @include flex(flex-start, center);
+    flex-direction: column;
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+}
+
+.section__title {
+    font-weight: 700;
+}
+
+.section__row {
+    @include flex(center, center);
+    width: 100%;
+    margin-top: 8.5rem;
+
+    .project-card + .project-card {
+        margin-left: 4.5rem;
+    }
+
+    .recommended-articles__article.blog__article {
+        width: calc(33.33% - 8rem / 3);
+    }
+
+    &--project-cards {
+        margin-top: 4.5rem;
+        align-items: stretch;
+    }
+}
+
+.section__row--fdc {
+    flex-direction: column;
+}
+
+.section__row--first {
+    margin-top: 0;
+}
+
+.section__row--with-box {
+    margin-top: 3.5rem;
+    width: 100%;
+}
+
+.section__column {
+    @include flex(center, center);
+    flex-direction: column;
+    flex: 1;
+    padding-top: 4.2rem;
+
+    &:not(:last-child) {
+        margin-right: 10rem;
+    }
+}
+
+.section__column--with-pattern {
+    background: url('../../assets/Pattern.svg') no-repeat center / cover;
+}
+
+.section__column-title {
+    margin: 3.4rem 0 1.6rem;
+}
+
+.section__column-description {
+    line-height: 1.4;
+}
+
+.section__box {
+    width: 78rem;
+    padding: 4rem;
+}
+
+.section__box--framed {
+    border: $main-border;
+}
+
+.section__box--grid {
+    @include flex(flex-start, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.section__box-title {
+    margin-bottom: 1.8rem;
+}
+
+.section {
+    .form-field {
+        @include flex(flex-start, flex-start);
+        flex-direction: column;
+        margin: 3.6rem 0;
+        font-size: 1.4rem;
+
+        &:first-child {
+            margin-top: 4.5rem;
+        }
+
+        & + .form-field--checkbox {
+            margin: -1rem 0 4rem;
+        }
+    }
+
+    .form-field--checkbox {
+        flex-direction: row;
+
+        .checkbox {
+            @include size(1.6rem);
+        }
+
+        .section__box-label {
+            margin-left: 1rem;
+            font-weight: 300;
+        }
+    }
+}
+
+
+.section__box-label {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.form-last-row {
+    @include flex(flex-end, flex-start);
+}
+
+.grid__item {
+    @include flex(center, center);
+    width: 25%;
+    margin-bottom: -.1rem;
+    margin-left: -.1rem;
+
+}
+
+.grid__item-logo {
+    //width: 100%; // makes images blurred
+}

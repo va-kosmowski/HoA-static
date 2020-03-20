@@ -1,0 +1,81 @@
+.button {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 4.2rem;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        @include size(100%, 6rem);
+        transform: skew(-30deg);
+        left: 110%;
+        top: 0;
+        transition: 0.25s ease-in-out;
+    }
+
+    &:hover {
+        &::before {
+            left: -40%;
+        }
+    }
+
+    &.button--outlined,
+    &.button--accented,
+    &.button--white {
+        border-radius: .6rem;
+        font-weight: 400;
+    }
+
+    &.button--accented {
+        background-color: #f63b5a;
+        color: #fff;
+        box-shadow: $common-shadow;
+
+        &::before {
+            background-color: rgba(255, 255, 255, .1);
+        }
+    }
+
+    &.button--outlined {
+        color: inherit;
+        background-color: transparent;
+        border: 2px solid;
+    }
+
+    &.button--white {
+        background-color: #fff;
+        color: $darker-color;
+
+        &::before {
+            background-color: rgba($main-color, .075);
+        }
+    }
+
+    &.button--flat {
+        padding: 0;
+        background-color: transparent;
+        color: $anchor-color;
+    }
+
+    &.button--icon {
+        width: 3.6rem;
+        height: 3.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: $border-color;
+        }
+
+        > i.icon {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}

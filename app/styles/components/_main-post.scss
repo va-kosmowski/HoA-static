@@ -1,0 +1,48 @@
+.main-post__banner {
+    @include flex(center, flex-end);
+    @include size (100%, 60rem);
+    background: left center / cover;
+
+    &.banner__blog {
+        background-image: url('../../assets/desktop_Blog_photo.png');
+    }
+
+    &.banner__hire {
+        background-image: url('../../assets/desktop_Hire us_photo.png');
+    }
+}
+
+.main-post {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    margin-bottom: 2.8rem;
+    padding: $content-padding;
+    color: #fff;
+}
+
+.main-post__chips-container {
+    margin-bottom: 1.4rem;
+}
+
+.main-post__title-container {
+    margin: 1rem 0;
+}
+.main-post__title {
+    color: inherit;
+}
+
+.main-post__description-container {
+    padding-top: .7rem;
+}
+
+.main-post__description {
+    font-weight: 300;
+}
+
+.main-post__button-container {
+    margin-top: 2.2rem;
+}
+
+.header__button {
+    padding: 1rem 3.2rem;
+}

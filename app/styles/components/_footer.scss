@@ -1,0 +1,65 @@
+.footer {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    color: $secondary-color;
+    border-top: $main-border;
+    margin: 10rem 0 2rem;
+
+    a {
+        color: $secondary-color;
+    }
+}
+
+.footer__row {
+    width: 100%;
+    @include flex(space-around, center);
+    margin: 2rem 0;
+}
+
+.footer__logo {
+    @include flex(flex-start, center);
+    flex: 1;
+}
+
+.footer__shortcuts {
+    width: 54%;
+    margin: 0 2rem;
+
+    > ul {
+        @include flex(space-evenly, center);
+    }
+}
+
+.footer__shortcut-item {
+    @include flex(center, center);
+    font-size: 1.4rem;
+}
+
+.footer__shortcut-link {
+    padding: 0 2rem;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.footer__social {
+    @include flex(flex-end, center);
+    flex: 1;
+
+    .icon {
+        @include size(2.2rem);
+        margin-left: 1rem;
+        transition: opacity 0.15s ease-in-out;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+
+.footer__copyright {
+    font-size: 1.2rem;
+    color: $footer-color;
+}

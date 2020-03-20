@@ -1,0 +1,61 @@
+.comment {
+    @include flex(flex-start, flex-start);
+    margin-top: 6rem;
+}
+
+@for $i from 1 through 10 {
+    .comment--level-#{$i} {
+        margin-left: ($i - 1) * 8.2rem;
+    }
+}
+
+.comment__details {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    margin-left: 2rem;
+
+    &,
+    > * {
+        width: 100%;
+    }
+}
+
+.comment__header {
+    @include flex(space-between, center);
+    margin-bottom: 1.6rem;
+}
+
+.comment__content {
+    font-weight: 300;
+}
+
+.comment__footer {
+    @include flex(flex-start, center);
+    margin-top: 1.6rem;
+}
+
+button.comment__rate-button.button--icon {
+    @include size(unset, 2.6rem);
+    padding: 0 1rem;
+    border: $main-border;
+    border-radius: 0.4rem;
+
+    > i.icon {
+        @include size(1.2rem);
+        margin-right: 1rem;
+    }
+}
+
+.comment__rate-button-count {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.comment__rate-button--up {
+    margin-right: 1rem;
+    color: $anchor-color;
+}
+
+.comment__rate-button--down {
+    color: $accents-color;
+}

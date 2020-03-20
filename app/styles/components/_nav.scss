@@ -1,0 +1,33 @@
+.nav {
+    @include flex(center, center);
+    flex: 1;
+    padding: 0 15rem;
+
+    > ul {
+        @include flex(space-around, center);
+        width: 100%;
+    }
+}
+
+.nav__item {
+    @include flex(center, center);
+    font-size: 1.7rem;
+}
+
+.header--homepage {
+    .nav__item-link {
+        color: #fff;
+    }
+}
+
+.nav__item-link {
+    color: $darker-color;
+    font-weight: 500;
+    padding: $menu-item-vertical-padding 0 $menu-item-vertical-padding - $menu-item-border-width;
+    border-bottom: $menu-item-border-width solid transparent;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+        border-bottom: $menu-item-border-width solid $triary-color;
+    }
+}

@@ -1,0 +1,40 @@
+.header__top-bar,
+.main-post,
+.content {
+    min-width: 98rem;
+    width: 100%;
+    max-width: 122rem;
+    padding: 0 $content-padding;
+}
+
+.content {
+    color: $main-color;
+}
+
+.breadcrumbs {
+    padding-top: 2rem;
+}
+
+.breadcrumbs__divider {
+    margin: 0 .7rem;
+}
+
+.breadcrumbs__link,
+.breadcrumbs__divider {
+    color: $triary-color;
+}
+
+.articles {
+    @include flex(flex-start, flex-start);
+}
+
+.main-column {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    flex: 1;
+    margin-right: 4.4rem;
+}
+
+.side-column {
+    width: 37rem;
+}

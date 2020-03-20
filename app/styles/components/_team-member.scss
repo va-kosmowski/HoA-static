@@ -1,0 +1,14 @@
+.team-member {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.team-member__avatar {
+  @include size(15rem);
+  margin-bottom: 2rem;
+}
+
+.team-member__role {
+  font-weight: 300;
+}
