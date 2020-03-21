@@ -30,9 +30,23 @@
 }
 
 .tips-card__illustration {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .tips-card_button {
     margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .tips-card__container--right {
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tips-card__container--right {
+        padding: 2rem 3rem;
+    }
 }

@@ -63,3 +63,24 @@
     font-size: 1.2rem;
     color: $footer-color;
 }
+
+@media (max-width: 1024px) {
+    .footer {
+        margin-top: 6rem;
+    }
+
+    .footer__shortcuts {
+        width: 64%;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer__shortcut-item {
+        font-size: 1.2rem;
+    }
+
+    .footer__shortcut-link {
+        padding: 0 .8rem;
+    }
+}
+

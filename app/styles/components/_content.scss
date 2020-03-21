@@ -38,3 +38,12 @@
 .side-column {
     width: 37rem;
 }
+
+
+@media (max-width: 991px) {
+    .header__top-bar,
+    .main-post,
+    .content {
+        min-width: auto;
+    }
+}

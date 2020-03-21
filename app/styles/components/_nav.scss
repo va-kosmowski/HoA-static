@@ -14,7 +14,7 @@
     font-size: 1.7rem;
 }
 
-.header--homepage {
+.header--home {
     .nav__item-link {
         color: #fff;
     }
@@ -29,5 +29,23 @@
 
     &:hover {
         border-bottom: $menu-item-border-width solid $triary-color;
+    }
+}
+
+@media (max-width: 1364px) {
+    .nav {
+        padding: 0 12rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        padding: 0 8rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+        display: none;
     }
 }

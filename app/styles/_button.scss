@@ -13,6 +13,7 @@
         transform: skew(-30deg);
         left: 110%;
         top: 0;
+        background-color: rgba($darker-color, .05);
         transition: 0.25s ease-in-out;
     }
 

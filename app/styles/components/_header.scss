@@ -13,17 +13,15 @@ $menu-item-border-width: .3rem;
     background-color: #fff;
     box-shadow: 0 0.2rem 0.4rem 0 rgba(20, 35, 62, 0.1);
 
-    &--homepage {
-        background-image: $homepage-background;
-        box-shadow: none;
-    }
-
-    & + * {
+    + * {
         margin-top: $header-height;
     }
 }
 
-.header--homepage {
+.header--home {
+    background-image: $homepage-background;
+    box-shadow: none;
+
     .header__logo {
         filter: invert(1) brightness(3);
     }
@@ -45,11 +43,26 @@ $menu-item-border-width: .3rem;
     @include flex(center, center);
 }
 
+.header__logo-container,
+.header__login-button-container {
+    padding: 1rem;
+}
+
 .header__logo {
     pointer-events: none;
     user-select: none;
 }
 
-.header__login-button-container {
-    padding: 1rem;
+@media (max-width: 991px) {
+    .header {
+        min-width: auto;
+    }
+
+    .header__logo-container {
+        padding: 0;
+    }
+
+    .header__login-button-container {
+        display: none;
+    }
 }
