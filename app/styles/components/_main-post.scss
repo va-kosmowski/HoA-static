@@ -1,48 +1,97 @@
 .main-post__banner {
-    @include flex(center, flex-end);
-    @include size (100%, 60rem);
-    background: left center / cover;
+  position: relative;
+  @include flex(center, flex-end);
+  @include size (100%, 60rem);
+  background: left center / cover;
 
-    &.banner__blog {
-        background-image: url('../../assets/desktop_Blog_photo.png');
-    }
+  &.banner__hire {
+    background-image: url('../../assets/desktop_Hire us_photo.png');
+  }
+}
 
-    &.banner__hire {
-        background-image: url('../../assets/desktop_Hire us_photo.png');
-    }
+.main-post__background-image,
+.main-post__background-overlay {
+  position: absolute;
+  z-index: -1;
+  @include size(100%);
+}
+
+.main-post__background-overlay {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.main-post__background-image {
+  background: left center / cover;
 }
 
 .main-post {
-    @include flex(flex-start, flex-start);
-    flex-direction: column;
-    margin-bottom: 2.8rem;
-    padding: $content-padding;
-    color: #fff;
+  @include flex(flex-start, stretch);
+  flex-direction: column;
+  margin-bottom: $main-post-margin-bottom;
+  padding: $content-padding;
+  color: #fff;
+
+  > * {
+    margin-right: 38rem !important;
+  }
 }
 
 .main-post__chips-container {
-    margin-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .main-post__title-container {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
+
 .main-post__title {
-    color: inherit;
+  color: inherit;
 }
 
 .main-post__description-container {
-    padding-top: .7rem;
+  padding-top: .7rem;
 }
 
 .main-post__description {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .main-post__button-container {
-    margin-top: 2.2rem;
+  margin-top: 2.2rem;
 }
 
 .header__button {
-    padding: 1rem 3.2rem;
+  padding: 1rem 3.2rem;
+}
+
+@media (max-width: 1024px) {
+  .main-post > * {
+    margin-right: 0;
+  }
+
+  .main-post__banner {
+    height: $main-post-height-tablet;
+  }
+}
+
+@media (max-width: 599px) and (orientation: portrait) {
+  .main-post {
+    margin-bottom: $main-post-margin-bottom-phone;
+  }
+
+  .main-post__banner {
+    height: $main-post-height-phone;
+  }
+
+  .main-post__description {
+    font-size: 3.888vw;
+  }
+
+  .main-post__chips-container {
+    margin-bottom: 2rem;
+  }
+
+  .main-post__title-container {
+    margin: 0;
+  }
 }

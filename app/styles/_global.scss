@@ -6,51 +6,55 @@
 @import 'icon';
 
 html {
-    font: 400 10px 'Roboto';
+  font: 400 10px 'Roboto';
 }
 
 body {
-    @include flex(flex-start, center);
-    flex-direction: column;
-    font-size: 1.6rem;
+  @include flex(flex-start, center);
+  flex-direction: column;
+  font-size: 1.6rem;
 }
 
 .wrapper {
-    overflow: hidden;
-    width: 100%;
-    max-width: 192rem;
-    flex: 1;
-    @include flex(center, flex-start);
+  overflow: hidden;
+  width: 100%;
+  max-width: 192rem;
+  flex: 1;
+  @include flex(center, flex-start);
 }
 
 .chip {
-    display: inline-block;
-    padding: .4rem 1rem;
-    margin-right: .5rem;
-    background-color: $secondary-color;
-    border-radius: 1.2rem;
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: #fff;
-    cursor: pointer;
+  display: inline-block;
+  padding: .2rem 1rem;
+  margin-right: $chip-margin-right;
+  background-color: $secondary-color;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fff;
+  cursor: pointer;
 
-    &:hover {
-        background-color: $secondary-color-hover;
-    }
+  &:hover {
+    background-color: $secondary-color-hover;
+  }
 }
 
 .common-input {
-    width: 100%;
-    padding: 1.2rem;
-    border: $main-border;
-    color: $main-color;
+  width: 100%;
+  padding: 1.2rem;
+  border: $main-border;
+  color: $main-color;
 
-    &::placeholder {
-        color: $secondary-color;
-    }
+  &::placeholder {
+    color: $secondary-color;
+  }
 
-    &.textarea {
-        height: 10rem;
-        resize: none;
-    }
+  &.textarea {
+    height: 10rem;
+    resize: none;
+  }
+}
+
+.job-offer__apply-button {
+
 }

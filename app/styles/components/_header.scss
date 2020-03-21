@@ -29,6 +29,10 @@ body {
   width: 100%;
   background-color: #fff;
   box-shadow: $header-box-shadow;
+
+  + * {
+    margin-top: $header-height !important;
+  }
 }
 
 .header--home {
@@ -53,7 +57,7 @@ body {
   max-width: $layout-max-width;
   height: $header-height;
 
-  > *:not(.nav__backdrop--mobile):not(.nav--mobile) {
+  > *:not(.nav__backdrop--mobile):not(.main-nav--mobile) {
     position: relative;
     z-index: 11;
   }
@@ -104,6 +108,10 @@ body {
 }
 
 @media (max-width: 599px) and (orientation: portrait) {
+  .header + * {
+    margin-top: $header-height-phone !important;
+  }
+
   .header .header__top-bar {
     height: $header-height-phone;
     padding: 0;

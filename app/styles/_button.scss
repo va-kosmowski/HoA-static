@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     padding: 1rem 4.2rem;
+    text-align: center;
     font-weight: 400;
     color: #fff;
     cursor: pointer;
@@ -27,13 +28,13 @@
     &.button--accented,
     &.button--white {
         border-radius: .6rem;
-        font-weight: 400;
     }
 
     &.button--accented {
         background-color: #f63b5a;
         color: #fff;
         box-shadow: $common-shadow;
+        font-weight: 400;
 
         &::before {
             background-color: rgba(255, 255, 255, .1);
@@ -44,11 +45,13 @@
         color: inherit;
         background-color: transparent;
         border: 2px solid;
+        font-weight: 500;
     }
 
     &.button--white {
         background-color: #fff;
         color: $darker-color;
+        font-weight: 400;
 
         &::before {
             background-color: rgba($main-color, .075);

@@ -15,7 +15,10 @@
 .nav__item {
   @include flex(center, center);
   font-size: 1.7rem;
-  margin-right: 5.4rem;
+
+  &:not(:last-child) {
+    margin-right: 5.4rem;
+  }
 }
 
 .header--home {
@@ -31,7 +34,8 @@
   border-bottom: $menu-item-border-width solid transparent;
   transition: 0.25s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &--active {
     border-bottom: $menu-item-border-width solid $triary-color;
   }
 }
@@ -53,7 +57,7 @@
   + .nav__backdrop--mobile {
     position: absolute;
     z-index: 10;
-    @include size(100vw,100vh);
+    @include size(100vw, 100vh);
     left: 0;
     top: $header-height-phone;
     pointer-events: none;
@@ -115,7 +119,7 @@
 
 @media (max-width: 1364px) {
   .main-nav {
-    padding: 0 12rem;
+    padding: 0 11rem;
   }
 }
 

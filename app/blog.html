@@ -17,15 +17,17 @@
         </div>
         <nav class="nav main-nav" aria-label="primary">
             <ul>
-                <li class="nav__item"><a class="nav__item-link" href="/knowledgebase">Baza wiedzy</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="/open-source">Open source</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="/blog">Blog</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/home">Strona główna</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/team">Team</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/career">Career</a></li>
+                <li class="nav__item"><a class="nav__item-link nav__item-link--active" href="/blog">Blog</a></li>
                 <li class="nav__item"><a class="nav__item-link" href="/hire">Hire Us</a></li>
             </ul>
         </nav>
         <nav class="nav main-nav--mobile" aria-label="mobile">
             <ul class="nav__container--mobile" style="display: none;">
-                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/knowledgebase">Baza wiedzy</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/knowledgebase">Baza wiedzy</a>
+                </li>
                 <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/open-source">Open source</a></li>
                 <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/blog">Blog</a></li>
                 <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/hire">Hire Us</a></li>
@@ -46,7 +48,9 @@
         </button>
     </div>
 </header>
-<div class="main-post__banner banner__blog">
+<div class="main-post__banner">
+    <div class="main-post__background-image" style="background-image: url('./assets/desktop_Blog_photo.png')"></div>
+    <div class="main-post__background-overlay"></div>
     <div class="main-post">
         <div class="main-post__chips-container">
             <span class="chip">automated-refactoring</span>
@@ -65,316 +69,323 @@
         </div>
     </div>
 </div>
-<main class="hoa-content">
-    <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="/home">Strona główna</a>
-        </li>
-        <li class="breadcrumbs__item">
-            <span class="breadcrumbs__current-location">Blog</span>
-        </li>
-    </ul>
-    <div class="articles">
-        <section class="all-articles articles__section main-column">
-            <header class="all-articles__header articles__header">
-                <h4 class="all-articles__title articles__title">
-                    Artykułów w bazie: <span class="all-articles__counter">421</span>
-                </h4>
-                <button class="all-articles__sorting articles__sorting">
-                    <span>Najnowsze <i class="icon all-articles__icon--expand icon--expand"></i></span>
-                </button>
-            </header>
-            <div class="all-articles__container articles__container">
-                <article class="all-articles__article article blog__article">
-                    <aside class="all-articles__article-image article__image">
-                        <a href="blog-post.html">
-                            <img src="./assets/tablet_Hire%20us_photo.png"
-                                 alt="Direct Mail Advertising How I Made 47 325 In 30 Days">
-                        </a>
-                    </aside>
-                    <aside class="all-articles__article-content article__content">
-                        <a href="blog-post.html">
-                            <div class="all-articles__article-chips article__chips">
-                                <span class="chip">swift</span>
-                                <span class="chip">refactoring</span>
-                            </div>
-                            <h4 class="all-articles__article-title article__title">
-                                Direct Mail Advertising How I Made 47 325 In 30 Days
-                            </h4>
-                            <p class="all-articles__article-description article__description">
-                                Can you imagine what we will be downloading in another twenty years? I mean who would
-                                have ever thought that you could
-                            </p>
-                        </a>
-                        <div class="all-articles__article-footer article__footer">
-                            <div class="all-articles__article-author article__author">
-                                <div class="author-avatar">
-                                    <div class="author-avatar-image"></div>
+<div class="wrapper">
+    <main class="hoa-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/home">Strona główna</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current-location">Blog</span>
+            </li>
+        </ul>
+        <div class="articles">
+            <section class="all-articles articles__section main-column">
+                <header class="all-articles__header articles__header">
+                    <h4 class="all-articles__title articles__title">
+                        Artykułów w bazie: <span class="all-articles__counter">421</span>
+                    </h4>
+                    <button class="all-articles__sorting articles__sorting">
+                        <span>Najnowsze <i class="icon all-articles__icon--expand icon--expand"></i></span>
+                    </button>
+                </header>
+                <div class="all-articles__container articles__container">
+                    <article class="all-articles__article article blog__article">
+                        <aside class="all-articles__article-image article__image">
+                            <a href="blog-post.html">
+                                <img src="./assets/tablet_Hire%20us_photo.png"
+                                     alt="Direct Mail Advertising How I Made 47 325 In 30 Days">
+                            </a>
+                        </aside>
+                        <aside class="all-articles__article-content article__content">
+                            <a href="blog-post.html">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
                                 </div>
-                                <a href="#author" class="author-anchor">Nathaniel Ballard</a>
-                            </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <div class="all-articles__article-length article__length">
-                                <i class="icon icon--time"></i>
-                                <span>3 minuty</span>
-                            </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <p class="all-articles__article-level article__level">
-                                <span>Level:</span><span class="article__level-span"> Mid</span>
-                            </p>
-                        </div>
-                    </aside>
-                </article>
-
-                <article class="all-articles__article article blog__article">
-                    <aside class="all-articles__article-image article__image">
-                        <a href="#author">
-                            <img src="./assets/tablet_Hire%20us_photo.png"
-                                 alt="Becoming A Dvd Repair Expert Online">
-                        </a>
-                    </aside>
-                    <aside class="all-articles__article-content article__content">
-
-                        <a href="blog-post.html">
-                            <div class="all-articles__article-chips article__chips">
-                                <span class="chip">automated-refactoring</span>
-                                <span class="chip">swift</span>
-                                <span class="chip">refactoring</span>
-                            </div>
-                            <h4 class="all-articles__article-title article__title">
-                                Becoming A Dvd Repair Expert Online
-                            </h4>
-                            <p class="all-articles__article-description article__description">
-                                Can you imagine what we will be downloading in another twenty years? I mean who would
-                                have ever thought that you could
-                            </p>
-                        </a>
-                        <div class="all-articles__article-footer article__footer">
-                            <div class="all-articles__article-author article__author">
-                                <div class="author-avatar">
-                                    <div class="author-avatar-image"></div>
+                                <h4 class="all-articles__article-title article__title">
+                                    Direct Mail Advertising How I Made 47 325 In 30 Days
+                                </h4>
+                                <p class="all-articles__article-description article__description">
+                                    Can you imagine what we will be downloading in another twenty years? I mean who
+                                    would
+                                    have ever thought that you could
+                                </p>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-author article__author">
+                                    <div class="author-avatar">
+                                        <div class="author-avatar-image"></div>
+                                    </div>
+                                    <a href="#author" class="author-anchor">Nathaniel Ballard</a>
                                 </div>
-                                <a href="#author" class="author-anchor">Gregory Diaz</a>
-                            </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <div class="all-articles__article-length article__length">
-                                <i class="icon icon--time"></i>
-                                <span>2 minuty</span>
-                            </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <p class="all-articles__article-level article__level">
-                                <span>Level:</span><span class="article__level-span"> Junior</span>
-                            </p>
-                        </div>
-                    </aside>
-                </article>
-
-                <article class="all-articles__article article blog__article">
-                    <aside class="all-articles__article-image article__image">
-                        <a href="#author">
-                            <img src="./assets/tablet_Hire%20us_photo.png"
-                                 alt="Website Hosting Reviews Free The Best Resource For Website Hosting Comparison">
-                        </a>
-                    </aside>
-                    <aside class="all-articles__article-content article__content">
-
-                        <a href="blog-post.html">
-                            <div class="all-articles__article-chips article__chips">
-                                <span class="chip">automated-refactoring</span>
-                                <span class="chip">swift</span>
-                                <span class="chip">refactoring</span>
-                            </div>
-                            <h4 class="all-articles__article-title article__title">
-                                Website Hosting Reviews Free The Best Resource For Website Hosting Comparison
-                            </h4>
-                            <p class="all-articles__article-description article__description">
-                                Can you imagine what we will be downloading in another twenty years? I mean who would
-                                have ever thought that you could
-                            </p>
-                        </a>
-                        <div class="all-articles__article-footer article__footer">
-                            <div class="all-articles__article-author article__author">
-                                <div class="author-avatar">
-                                    <div class="author-avatar-image"></div>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <div class="all-articles__article-length article__length">
+                                    <i class="icon icon--time"></i>
+                                    <span>3 minuty</span>
                                 </div>
-                                <a href="#author" class="author-anchor">Cynthia Steele</a>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <p class="all-articles__article-level article__level">
+                                    <span>Level:</span><span class="article__level-span"> Mid</span>
+                                </p>
                             </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <div class="all-articles__article-length article__length">
-                                <i class="icon icon--time"></i>
-                                <span>4 minuty</span>
-                            </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <p class="all-articles__article-level article__level">
-                                <span>Level:</span><span class="article__level-span"> Senior</span>
-                            </p>
-                        </div>
-                    </aside>
-                </article>
+                        </aside>
+                    </article>
 
-                <article class="all-articles__article article blog__article">
-                    <aside class="all-articles__article-image article__image">
-                        <a href="#author">
-                            <img src="./assets/tablet_Hire%20us_photo.png"
-                                 alt="How To Build A Pc">
-                        </a>
-                    </aside>
-                    <aside class="all-articles__article-content article__content">
+                    <article class="all-articles__article article blog__article">
+                        <aside class="all-articles__article-image article__image">
+                            <a href="#author">
+                                <img src="./assets/tablet_Hire%20us_photo.png"
+                                     alt="Becoming A Dvd Repair Expert Online">
+                            </a>
+                        </aside>
+                        <aside class="all-articles__article-content article__content">
 
-                        <a href="blog-post.html">
-                            <div class="all-articles__article-chips article__chips">
-                                <span class="chip">automated-refactoring</span>
-                                <span class="chip">swift</span>
-                                <span class="chip">refactoring</span>
-                            </div>
-                            <h4 class="all-articles__article-title article__title">
-                                How To Build A Pc
-                            </h4>
-                            <p class="all-articles__article-description article__description">
-                                Can you imagine what we will be downloading in another twenty years? I mean who would
-                                have ever thought that you could
-                            </p>
-                        </a>
-                        <div class="all-articles__article-footer article__footer">
-                            <div class="all-articles__article-author article__author">
-                                <div class="author-avatar">
-                                    <div class="author-avatar-image"></div>
+                            <a href="blog-post.html">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">automated-refactoring</span>
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
                                 </div>
-                                <a href="#author" class="author-anchor">Maurice Salazar</a>
+                                <h4 class="all-articles__article-title article__title">
+                                    Becoming A Dvd Repair Expert Online
+                                </h4>
+                                <p class="all-articles__article-description article__description">
+                                    Can you imagine what we will be downloading in another twenty years? I mean who
+                                    would
+                                    have ever thought that you could
+                                </p>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-author article__author">
+                                    <div class="author-avatar">
+                                        <div class="author-avatar-image"></div>
+                                    </div>
+                                    <a href="#author" class="author-anchor">Gregory Diaz</a>
+                                </div>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <div class="all-articles__article-length article__length">
+                                    <i class="icon icon--time"></i>
+                                    <span>2 minuty</span>
+                                </div>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <p class="all-articles__article-level article__level">
+                                    <span>Level:</span><span class="article__level-span"> Junior</span>
+                                </p>
                             </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <div class="all-articles__article-length article__length">
-                                <i class="icon icon--time"></i>
-                                <span>3 minuty</span>
+                        </aside>
+                    </article>
+
+                    <article class="all-articles__article article blog__article">
+                        <aside class="all-articles__article-image article__image">
+                            <a href="#author">
+                                <img src="./assets/tablet_Hire%20us_photo.png"
+                                     alt="Website Hosting Reviews Free The Best Resource For Website Hosting Comparison">
+                            </a>
+                        </aside>
+                        <aside class="all-articles__article-content article__content">
+
+                            <a href="blog-post.html">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">automated-refactoring</span>
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="all-articles__article-title article__title">
+                                    Website Hosting Reviews Free The Best Resource For Website Hosting Comparison
+                                </h4>
+                                <p class="all-articles__article-description article__description">
+                                    Can you imagine what we will be downloading in another twenty years? I mean who
+                                    would
+                                    have ever thought that you could
+                                </p>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-author article__author">
+                                    <div class="author-avatar">
+                                        <div class="author-avatar-image"></div>
+                                    </div>
+                                    <a href="#author" class="author-anchor">Cynthia Steele</a>
+                                </div>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <div class="all-articles__article-length article__length">
+                                    <i class="icon icon--time"></i>
+                                    <span>4 minuty</span>
+                                </div>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <p class="all-articles__article-level article__level">
+                                    <span>Level:</span><span class="article__level-span"> Senior</span>
+                                </p>
                             </div>
-                            <div class="all-articles__article-footer-separator article__footer-separator"></div>
-                            <p class="all-articles__article-level article__level">
-                                <span>Level:</span><span class="article__level-span"> Mid</span>
-                            </p>
+                        </aside>
+                    </article>
+
+                    <article class="all-articles__article article blog__article">
+                        <aside class="all-articles__article-image article__image">
+                            <a href="#author">
+                                <img src="./assets/tablet_Hire%20us_photo.png"
+                                     alt="How To Build A Pc">
+                            </a>
+                        </aside>
+                        <aside class="all-articles__article-content article__content">
+
+                            <a href="blog-post.html">
+                                <div class="all-articles__article-chips article__chips">
+                                    <span class="chip">automated-refactoring</span>
+                                    <span class="chip">swift</span>
+                                    <span class="chip">refactoring</span>
+                                </div>
+                                <h4 class="all-articles__article-title article__title">
+                                    How To Build A Pc
+                                </h4>
+                                <p class="all-articles__article-description article__description">
+                                    Can you imagine what we will be downloading in another twenty years? I mean who
+                                    would
+                                    have ever thought that you could
+                                </p>
+                            </a>
+                            <div class="all-articles__article-footer article__footer">
+                                <div class="all-articles__article-author article__author">
+                                    <div class="author-avatar">
+                                        <div class="author-avatar-image"></div>
+                                    </div>
+                                    <a href="#author" class="author-anchor">Maurice Salazar</a>
+                                </div>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <div class="all-articles__article-length article__length">
+                                    <i class="icon icon--time"></i>
+                                    <span>3 minuty</span>
+                                </div>
+                                <div class="all-articles__article-footer-separator article__footer-separator"></div>
+                                <p class="all-articles__article-level article__level">
+                                    <span>Level:</span><span class="article__level-span"> Mid</span>
+                                </p>
+                            </div>
+                        </aside>
+                    </article>
+                    <div class="all-articles__pagination-container">
+                        <div class="all-articles__pagination pagination">
+                            <a href="#" class="pagination__item pagination__item--first"></a>
+                            <a href="#" class="pagination__item">1</a>
+                            <a href="#" class="pagination__item">2</a>
+                            <a href="#" class="pagination__item">3</a>
+                            <a href="#" class="pagination__item">...</a>
+                            <a href="#" class="pagination__item">31</a>
+                            <a href="#" class="pagination__item pagination__item--last"></a>
                         </div>
-                    </aside>
-                </article>
-                <div class="all-articles__pagination-container">
-                    <div class="all-articles__pagination pagination">
-                        <a href="#" class="pagination__item pagination__item--first"></a>
-                        <a href="#" class="pagination__item">1</a>
-                        <a href="#" class="pagination__item">2</a>
-                        <a href="#" class="pagination__item">3</a>
-                        <a href="#" class="pagination__item">...</a>
-                        <a href="#" class="pagination__item">31</a>
-                        <a href="#" class="pagination__item pagination__item--last"></a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="recommended-articles articles__section side-column">
-            <header class="recommended-articles__header articles__header">
-                <h2 class="recommended-articles__title articles__title">Polecane artykuły</h2>
-            </header>
-            <div class="recommended-articles__container articles__container">
-                <article class="recommended-articles__article article blog__article">
-                    <aside class="recommended-articles__article-image article__image">
-                        <a href="#author">
-                            <img src="./assets/tablet_Hire%20us_photo.png"
-                                 alt="Choosing The Best Audio Player Software For Your Computer">
-                        </a>
-                    </aside>
-                    <aside class="recommended-articles__article-content article__content">
+            </section>
+            <section class="recommended-articles articles__section side-column">
+                <header class="recommended-articles__header articles__header">
+                    <h2 class="recommended-articles__title articles__title">Polecane artykuły</h2>
+                </header>
+                <div class="recommended-articles__container articles__container">
+                    <article class="recommended-articles__article article blog__article">
+                        <aside class="recommended-articles__article-image article__image">
+                            <a href="#author">
+                                <img src="./assets/tablet_Hire%20us_photo.png"
+                                     alt="Choosing The Best Audio Player Software For Your Computer">
+                            </a>
+                        </aside>
+                        <aside class="recommended-articles__article-content article__content">
 
-                        <a href="blog-post.html">
-                            <h4 class="recommended-articles__article-title article__title">
-                                Choosing The Best Audio Player Software For Your Computer
-                            </h4>
-                            <p class="recommended-articles__article-description article__description">
-                                I mean who would have ever thought that you could buy whatever you want.
-                            </p>
-                        </a>
-                        <div class="recommended-articles__article-footer article__footer">
-                            <div class="recommended-articles__article-author article__author">
-                                <div class="author-avatar">
-                                    <div class="author-avatar-image"></div>
+                            <a href="blog-post.html">
+                                <h4 class="recommended-articles__article-title article__title">
+                                    Choosing The Best Audio Player Software For Your Computer
+                                </h4>
+                                <p class="recommended-articles__article-description article__description">
+                                    I mean who would have ever thought that you could buy whatever you want.
+                                </p>
+                            </a>
+                            <div class="recommended-articles__article-footer article__footer">
+                                <div class="recommended-articles__article-author article__author">
+                                    <div class="author-avatar">
+                                        <div class="author-avatar-image"></div>
+                                    </div>
+                                    <a href="#author" class="author-anchor">Gregory Diaz</a>
                                 </div>
-                                <a href="#author" class="author-anchor">Gregory Diaz</a>
-                            </div>
-                            <div class="recommended-articles__article-footer-separator article__footer-separator"></div>
-                            <div class="recommended-articles__article-length article__length">
-                                <i class="icon icon--time"></i>
-                                <span>3 minuty</span>
-                            </div>
-                        </div>
-                    </aside>
-                </article>
-
-                <article class="recommended-articles__article article blog__article">
-                    <aside class="recommended-articles__article-image article__image">
-                        <a href="#author">
-                            <img src="./assets/tablet_Hire%20us_photo.png"
-                                 alt="How To Meet That Special Someone">
-                        </a>
-                    </aside>
-                    <aside class="recommended-articles__article-content article__content">
-
-                        <a href="blog-post.html">
-                            <h4 class="recommended-articles__article-title article__title">
-                                How To Meet That Special Someone
-                            </h4>
-                            <p class="recommended-articles__article-description article__description">
-                                I mean who would have ever thought that you could buy whatever you want.
-                            </p>
-                        </a>
-                        <div class="recommended-articles__article-footer article__footer">
-                            <div class="recommended-articles__article-author article__author">
-                                <div class="author-avatar">
-                                    <div class="author-avatar-image"></div>
+                                <div class="recommended-articles__article-footer-separator article__footer-separator"></div>
+                                <div class="recommended-articles__article-length article__length">
+                                    <i class="icon icon--time"></i>
+                                    <span>3 minuty</span>
                                 </div>
-                                <a href="#author" class="author-anchor">Ola Colon</a>
                             </div>
-                            <div class="recommended-articles__article-footer-separator article__footer-separator"></div>
-                            <div class="recommended-articles__article-length article__length">
-                                <i class="icon icon--time"></i>
-                                <span>2 minuty</span>
+                        </aside>
+                    </article>
+
+                    <article class="recommended-articles__article article blog__article">
+                        <aside class="recommended-articles__article-image article__image">
+                            <a href="#author">
+                                <img src="./assets/tablet_Hire%20us_photo.png"
+                                     alt="How To Meet That Special Someone">
+                            </a>
+                        </aside>
+                        <aside class="recommended-articles__article-content article__content">
+
+                            <a href="blog-post.html">
+                                <h4 class="recommended-articles__article-title article__title">
+                                    How To Meet That Special Someone
+                                </h4>
+                                <p class="recommended-articles__article-description article__description">
+                                    I mean who would have ever thought that you could buy whatever you want.
+                                </p>
+                            </a>
+                            <div class="recommended-articles__article-footer article__footer">
+                                <div class="recommended-articles__article-author article__author">
+                                    <div class="author-avatar">
+                                        <div class="author-avatar-image"></div>
+                                    </div>
+                                    <a href="#author" class="author-anchor">Ola Colon</a>
+                                </div>
+                                <div class="recommended-articles__article-footer-separator article__footer-separator"></div>
+                                <div class="recommended-articles__article-length article__length">
+                                    <i class="icon icon--time"></i>
+                                    <span>2 minuty</span>
+                                </div>
                             </div>
-                        </div>
-                    </aside>
-                </article>
-            </div>
-        </section>
-    </div>
-    <footer class="footer">
-        <div class="footer__row">
-            <div class="footer__logo">
-                <a href="/home"><img src="./assets/HouseofAngular.svg" alt="House of Angular"></a>
-            </div>
-            <div class="footer__shortcuts">
-                <ul class="nav footer-nav">
-                    <li class="nav__item footer-nav__item">
-                        <a class="nav__item-link footer-nav__item-link" href="/knowledgebase">Baza wiedzy</a>
-                    </li>
-                    <li class="nav__item footer-nav__item">
-                        <a class="nav__item-link footer-nav__item-link" href="/open-source">Open source</a>
-                    </li>
-                    <li class="nav__item footer-nav__item">
-                        <a class="nav__item-link footer-nav__item-link" href="/blog">Blog</a>
-                    </li>
-                    <li class="nav__item footer-nav__item">
-                        <a class="nav__item-link footer-nav__item-link" href="/hire-us">Hire Us</a>
-                    </li>
-                    <li class="nav__item footer-nav__item">
-                        <a class="nav__item-link footer-nav__item-link" href="#">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__social">
-                <a href="//www.facebook.com/House-of-Angular-344689403060210" target="_blank"><i class="icon icon--facebook"></i></a>
-                <!-- <a href="#" target="_blank"><i class="icon icon--github"></i></a> -->
-            </div>
+                        </aside>
+                    </article>
+                </div>
+            </section>
         </div>
-        <div class="footer__row">
-            <div class="footer__copyright">
-                <span>Copyright &copy; 2020 House of Angular. All rights reserved.</span>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__logo">
+                    <a href="/home"><img src="./assets/HouseofAngular.svg" alt="House of Angular"></a>
+                </div>
+                <div class="footer__shortcuts">
+                    <ul class="nav footer-nav">
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/knowledgebase">Baza wiedzy</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/open-source">Open source</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/hire-us">Hire Us</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="//www.facebook.com/House-of-Angular-344689403060210" target="_blank"><i
+                            class="icon icon--facebook"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="icon icon--github"></i></a> -->
+                </div>
             </div>
-        </div>
-    </footer>
-</main>
+            <div class="footer__row">
+                <div class="footer__copyright">
+                    <span>Copyright &copy; 2020 House of Angular. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
 </body>
 </html>

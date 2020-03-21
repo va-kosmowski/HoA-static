@@ -1,0 +1,106 @@
+.job-offers__grid {
+  width: 100%;
+  @include flex(flex-start, flex-start);
+  flex-wrap: wrap;
+}
+
+.job-offers__item {
+  width: calc(100% / 3);
+  max-width: 37rem;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 3.5rem;
+  }
+
+  &:not(:nth-child(n + 7)) {
+    margin-bottom: 3.5rem;
+  }
+}
+
+$job-offer-transition:0.2s all ease-in-out;
+
+.job-offer {
+  @include flex(flex-start, stretch);
+  flex-direction: column;
+  padding: 3.4rem 3rem;
+  border: 1px solid $border-color;
+  transition: $job-offer-transition;
+
+  &:hover {
+    background-color: $accents-color;
+    border-color: $accents-color;
+    cursor: pointer;
+    box-shadow: 0 2px 6px 0 rgba(20,35,62,0.2);
+
+    .job-offer__title a {
+      color: #fff;
+    }
+
+    .job-offer__location {
+      color: $accents-color-dark;
+    }
+
+    .job-offer__tags {
+      border-top-color: #fff;
+    }
+
+    .chip {
+      background-color: #fff;
+      color: $secondary-color;
+
+      &:hover {
+        background-color: rgba($secondary-color, 0.1);
+      }
+    }
+
+    .job-offer__apply-button {
+      background-color: #fff;
+      border-color: #fff;
+      color: $darker-color;
+
+      &:hover {
+        box-shadow: 0 2px 6px 0 rgba(20,35,62,0.2);
+      }
+    }
+  }
+}
+
+.job-offer__title {
+  a {
+    color: $darker-color;
+    transition: $job-offer-transition;
+  }
+
+  + .job-offer__location {
+    margin-top: 1rem;
+  }
+}
+
+.job-offer__location {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $secondary-color;
+  transition: $job-offer-transition;
+
+  + .job-offer__tags {
+    margin-top: 3rem;
+  }
+}
+
+.job-offer__tags {
+  $job-offer-tag-margin-bottom: 0.9rem;
+  padding: 3rem 0 3rem - $job-offer-tag-margin-bottom;
+  border-top: 1px solid $border-color;
+  width: calc(100% + #{$chip-margin-right});
+  transition: $job-offer-transition;
+
+  .chip {
+    margin-bottom: $job-offer-tag-margin-bottom;
+    transition: $job-offer-transition;
+  }
+}
+
+.job-offer__apply-button {
+  transition: $job-offer-transition;
+}

@@ -40,9 +40,12 @@ function liveReload(done) {
         server: {
             baseDir: 'app',
             routes: {
+                'index.html': '/app/home.html',
                 '/dist': 'dist/',
                 '/blog': 'app/blog.html',
                 '/hire': 'app/hire.html',
+                '/career': 'app/career.html',
+                '/team': 'app/team.html',
                 '/knowledgebase': 'app/knowledgebase.html',
                 '/home': 'app/home.html',
                 '/open-source': 'app/open-source.html',
