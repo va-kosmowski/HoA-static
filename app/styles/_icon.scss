@@ -1,46 +1,57 @@
-i.icon {
+i {
+  &.icon {
     display: inline-flex;
     background-position: center;
     background-size: cover;
-}
+  }
 
-i.icon--time {
-    background-image: url('../assets/clock-outline.svg');
-}
-
-i.icon--github {
-    background-image: url('../assets/github-sign.svg');
-}
-
-i.icon--facebook {
-    background-image: url('../assets/facebook-logo.svg');
-}
-
-i.icon--search {
-    background-image: url('../assets/icon_search_dark.svg');
-}
-
-i.icon--expand {
-    width: .8rem;
-    height: .8rem;
+  &.icon--expand {
+    @include size(.8rem);
     border: .2rem solid;
     border-left: 0;
     border-top: 0;
     transform: rotate(45deg);
-}
+    transition: 0.3s all 0.1s;
 
-i.icon--thumbs-up {
+    &.flipY {
+      transform: rotate(225deg);
+    }
+  }
+
+  &.icon--time {
+    background-image: url('../assets/clock-outline.svg');
+  }
+
+  &.icon--github {
+    background-image: url('../assets/github-sign.svg');
+  }
+
+  &.icon--facebook {
+    background-image: url('../assets/facebook-logo.svg');
+  }
+
+  &.icon--search {
+    background-image: url('../assets/icon_search_dark.svg');
+  }
+
+  &.icon--thumbs-up {
     background-image: url('../assets/thumb-up_blue.svg');
-}
+  }
 
-i.icon--thumbs-down {
+  &.icon--thumbs-down {
     background-image: url('../assets/thumb-down_red.svg');
-}
+  }
 
-i.icon--emoji {
+  &.icon--emoji {
     background-image: url('../assets/emoticon-excited-outline.svg');
-}
+  }
 
-i.icon--camera {
+  &.icon--camera {
     background-image: url('../assets/icon_camera.svg');
+  }
+
+  &.icon--hamburger {
+    background-image: url('../assets/icon_hamburger.svg');
+    width: 3.6rem;
+  }
 }

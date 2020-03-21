@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>House of Angular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" default-src="unsafe-inline">
     <link href="/dist/style.bundle.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <div class="header__top-bar">
-        <div class="header__logo-container">
-            <a href="/home">
+        <div>
+            <a href="/home" class="header__logo-container">
                 <img class="header__logo" src="./assets/Logo%20-%20main%20color.svg" alt="House of Angular">
             </a>
         </div>
-        <nav class="nav">
+        <nav class="nav main-nav" aria-label="primary">
             <ul>
                 <li class="nav__item"><a class="nav__item-link" href="/knowledgebase">Baza wiedzy</a></li>
                 <li class="nav__item"><a class="nav__item-link" href="/open-source">Open source</a></li>
@@ -22,9 +23,27 @@
                 <li class="nav__item"><a class="nav__item-link" href="/hire">Hire Us</a></li>
             </ul>
         </nav>
+        <nav class="nav main-nav--mobile" aria-label="mobile">
+            <ul class="nav__container--mobile" style="display: none;">
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/knowledgebase">Baza wiedzy</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/open-source">Open source</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/blog">Blog</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/hire">Hire Us</a></li>
+                <li class="nav__item--mobile">
+                    <div class="header__login-button-container">
+                        <button type="button" class="button header__login-button button--accented">Login</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav__backdrop--mobile toggle-menu"></div>
+
         <div class="header__login-button-container">
-            <button class="button header__login-button button--accented">Login</button>
+            <button type="button" class="button header__login-button button--accented">Login</button>
         </div>
+        <button class="button button--flat header__hamburger-button toggle-menu">
+            <i class="icon icon--hamburger"></i>
+        </button>
     </div>
 </header>
 <div class="main-post__banner banner__hire">
@@ -43,7 +62,7 @@
     </div>
 </div>
 <div class="wrapper">
-    <main class="content">
+    <main class="hoa-content">
         <div class="sections">
             <section class="section section--our-passion">
                 <div class="section__row section__row--fdc section__row--first">
@@ -183,25 +202,35 @@
         <footer class="footer">
             <div class="footer__row">
                 <div class="footer__logo">
-                    <img src="./assets/HouseofAngular.svg" alt="House of Angular">
+                    <a href="/home"><img src="./assets/HouseofAngular.svg" alt="House of Angular"></a>
                 </div>
                 <div class="footer__shortcuts">
-                    <ul>
-                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Baza wiedzy</a></li>
-                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Open source</a></li>
-                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Blog</a></li>
-                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Hire Us</a></li>
-                        <li class="footer__shortcut-item"><a class="footer__shortcut-link" href="#">Privacy Policy</a></li>
+                    <ul class="nav footer-nav">
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/knowledgebase">Baza wiedzy</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/open-source">Open source</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/hire-us">Hire Us</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="#">Privacy Policy</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__social">
-                    <a href="//www.facebook.com/House-of-Angular-344689403060210"><i class="icon icon--facebook"></i></a>
-                    <a href="#"><i class="icon icon--github"></i></a>
+                    <a href="//www.facebook.com/House-of-Angular-344689403060210" target="_blank"><i class="icon icon--facebook"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="icon icon--github"></i></a> -->
                 </div>
             </div>
             <div class="footer__row">
                 <div class="footer__copyright">
-                    <span>Copyirght &copy; 2013-2019 ValueAdd. All rights reserved.</span>
+                    <span>Copyright &copy; 2020 House of Angular. All rights reserved.</span>
                 </div>
             </div>
         </footer>

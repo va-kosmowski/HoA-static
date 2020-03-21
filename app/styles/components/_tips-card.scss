@@ -1,52 +1,74 @@
 .tips-card {
-    width: 100%;
-    @include flex(flex-start, stretch);
+  width: 100%;
+  @include flex(flex-start, stretch);
 
-    &--illustration-on-left {
-        flex-direction: row-reverse;
-    }
+  &--illustration-on-left {
+    flex-direction: row-reverse;
+  }
 
-    &--dark {
-        .tips-card__container--right {
-            background-color: $darker-color;
-            color: #fff;
-        }
+  &--dark {
+    .tips-card__container--right {
+      background-color: $darker-color;
+      color: #fff;
     }
+  }
 }
 
 .tips-card__container {
-    width: 50%;
+  @include flex(flex-start, flex-start);
+  width: 50%;
 
-    &--right {
-        @include flex(flex-start, flex-start);
-        flex-direction: column;
-        padding: 5rem;
-        background-color: #fff;
-    }
+  &--right {
+    flex-direction: column;
+    padding: 5rem;
+    background-color: #fff;
+  }
 }
 
 .tips-card__title-underline {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .tips-card__illustration {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .tips-card_button {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 @media (max-width: 1024px) {
-    .tips-card__container--right {
-        padding: 3rem 5rem;
-    }
+  .tips-card__container--right {
+    padding: 3rem 5rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .tips-card__container--right {
-        padding: 2rem 3rem;
+  .tips-card__container--right {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 599px) and (orientation: portrait) {
+  .tips-card {
+    flex-direction: column;
+  }
+
+  .tips-card__container {
+    width: 100%;
+
+    &--right {
+      padding: 1.6rem 2rem;
     }
+  }
+
+  .tips-card__title-underline {
+    margin: 2rem 0 1rem;
+  }
+
+  .tips-card__button {
+    margin-top: 4rem;
+  }
 }
