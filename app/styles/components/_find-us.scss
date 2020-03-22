@@ -70,3 +70,62 @@
   @include flex(space-between, center);
   flex-direction: column;
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .find-us {
+    .section__row {
+      &:not(:first-child) {
+        margin-top: 7.2rem;
+      }
+    }
+  }
+
+  .find-us__block {
+    width: 49%;
+    height: 28.64vw;
+
+    + .find-us__block {
+      margin-left: 2%;
+    }
+  }
+
+  .find-us__block-items {
+    height: 10.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .find-us__block {
+    &--facebook {
+      .find-us__logo {
+        height: 3.2rem;
+      }
+    }
+
+    &--instagram {
+      .find-us__logo {
+        height: 4.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .find-us__wrapper {
+    flex-direction: column;
+  }
+
+  .find-us__block {
+    width: 100%;
+    height: 20rem;
+
+    + .find-us__block {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
+
+  .find-us__block-items {
+    height: 9.4rem;
+  }
+}

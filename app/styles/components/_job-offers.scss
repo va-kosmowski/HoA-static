@@ -1,19 +1,21 @@
 .job-offers__grid {
   width: 100%;
-  @include flex(flex-start, flex-start);
+  @include flex(center, flex-start);
   flex-wrap: wrap;
 }
 
-.job-offers__item {
-  width: calc(100% / 3);
-  max-width: 37rem;
+@media (min-width: 1365px) {
+  .job-offers__item {
+    width: calc(100% / 3);
+    max-width: 37rem;
 
-  &:not(:nth-child(3n)) {
-    margin-right: 3.5rem;
-  }
+    &:not(:nth-child(3n)) {
+      margin-right: 3.5rem;
+    }
 
-  &:not(:nth-child(n + 7)) {
-    margin-bottom: 3.5rem;
+    &:not(:nth-child(n + 7)) {
+      margin-bottom: 3.5rem;
+    }
   }
 }
 
@@ -104,4 +106,61 @@ $job-offer-transition:0.2s all ease-in-out;
 
 .job-offer__apply-button {
   transition: $job-offer-transition;
+}
+
+@media (min-width: 1025px) and (max-width: 1364px) {
+  .job-offers__item {
+    width: 32%;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 2%;
+    }
+
+    &:not(:nth-child(n + 7)) {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 1364px) {
+  .job-offer {
+    padding: 2.8rem 2.2rem;
+  }
+
+  .job-offer__tags {
+    padding: 2.2rem 0 1.6rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .job-offers__item {
+    width: calc((100% - 3.5rem) / 2);
+    max-width: 37rem;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 3.5rem;
+    }
+
+    &:not(:nth-child(n + 5)) {
+      margin-bottom: 3.5rem;
+    }
+
+    &:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .job-offers__item {
+    width: 100%;
+
+    &:not(:nth-child(n + 6)) {
+      margin-bottom: 2rem;
+    }
+
+    &:nth-child(n + 7) {
+      display: none;
+    }
+  }
 }

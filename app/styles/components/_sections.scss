@@ -254,6 +254,12 @@
 }
 
 @media (max-width: 599px) and (orientation: portrait) {
+  .section__row {
+    &:not(:first-child) {
+      margin-top: 3rem;
+    }
+  }
+
   .sections--home {
     .section__row {
       margin-top: 3rem;
@@ -279,6 +285,14 @@
   .section__box--grid {
     .grid__item {
       width: 50%;
+    }
+  }
+
+  .section--meet-our-team {
+    margin-top: 0;
+
+    .section__row {
+      margin-top: 0;
     }
   }
 }

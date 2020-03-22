@@ -6,6 +6,12 @@ h5, .h5,
 h6, .h6 {
     font-weight: 500;
     line-height: 1.5;
+
+    > a {
+        font: inherit;
+        line-height: inherit;
+        color: inherit;
+    }
 }
 
 .underline {
@@ -47,7 +53,7 @@ h5, .h5 {
     font-size: 1.8rem;
 }
 
-span, p {
+span, p, a {
     line-height: 1.5;
 }
 
@@ -114,7 +120,7 @@ span, p {
         line-height: 1.25;
     }
 
-    span, p {
+    span, p, a {
         font-size: 1.38rem;
         line-height: 1.45;
     }
