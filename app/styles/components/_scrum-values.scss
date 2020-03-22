@@ -1,0 +1,65 @@
+.scrum-values {
+  .icon {
+    &.icon--rocket {
+      background-image: url('../../assets/inclined-rocket.svg');
+    }
+  }
+}
+
+.scrum-values__wrapper {
+  @include flex(flex-start, stretch);
+  flex-direction: column;
+}
+
+.scrum-values__row {
+  @include flex(space-between, stretch);
+  margin-top: 5rem;
+
+  &--three-items {
+    .scrum-values__item {
+      width: 30%;
+
+      &:not(:last-child) {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  &--two-items {
+    justify-content: center;
+
+    .scrum-values__item {
+      width: 40%;
+
+      &:first-child {
+        margin-right: 3.333%;
+      }
+    }
+  }
+
+  + .scrum-values__row {
+    margin-top: 13.6rem;
+  }
+}
+
+.scrum-values__item {
+  @include flex(flex-start, flex-start);
+}
+
+.scrum-values__item-icon-container {
+  @include flex(center, center);
+  @include size(6rem);
+  margin-right: 4rem;
+
+  .icon {
+    @include size(inherit);
+  }
+}
+
+.scrum-values__item-title {
+  line-height: 1;
+}
+
+.scrum-values__item-description {
+  margin-top: 1rem;
+}

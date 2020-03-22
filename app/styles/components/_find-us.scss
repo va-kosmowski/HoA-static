@@ -1,0 +1,72 @@
+.find-us__block {
+  position: relative;
+  @include size(58rem, 36rem);
+  @include flex(center, center);
+  background-blend-mode: color;
+
+  + .find-us__block {
+    margin-left: 4rem;
+  }
+
+  &--facebook {
+    background: url('../../assets/random-photo-1.jpg') center / cover;
+
+    .find-us__block-overlay {
+      background-color: $darker-color;
+    }
+
+    .find-us__logo {
+      height: 4.5rem;
+    }
+
+    .find-us__button {
+      color: $darker-color;
+    }
+  }
+
+  &--instagram {
+    background: url('../../assets/random-photo-2.jpg') center / cover;
+
+    .find-us__block-overlay {
+      background-color: #670C19;
+    }
+
+    .find-us__logo {
+      height: 6.2rem;
+    }
+
+    .find-us__button {
+      color: $accents-color;
+
+      .icon {
+        fill: $accents-color;
+      }
+    }
+  }
+}
+
+.find-us__block-overlay {
+  position: absolute;
+  opacity: 0.9;
+  @include size(100%);
+}
+
+.button.find-us__button {
+  @include flex(flex-start, center);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 700;
+
+
+  .icon {
+    @include size(1.8rem);
+    margin-right: 1rem;
+  }
+}
+
+.find-us__block-items {
+  position: relative;
+  @include size(26rem, 11.8rem);
+  @include flex(space-between, center);
+  flex-direction: column;
+}
