@@ -1,8 +1,15 @@
 .career-banner__post {
-  > *:not(.career-banner__title-underline) {
+  > * {
     width: 52rem;
-    margin-right: 0 !important;
   }
+
+  > .career-banner__title-underline {
+    width: 10rem;
+  }
+}
+
+.career-banner__title-container {
+  margin: 0;
 }
 
 .career-banner__title {
@@ -15,12 +22,6 @@
 }
 
 @media (max-width: 599px) and (orientation: portrait) {
-  .career-banner__post {
-    > *:not(.career-banner__title-underline) {
-      width: 100%;
-    }
-  }
-
   .career-banner__title {
     font-size: 3.6rem;
   }

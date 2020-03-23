@@ -187,7 +187,7 @@
     flex-direction: row;
 
     .checkbox {
-      @include size(1.6rem);
+      @include absolute-size(1.6rem);
     }
 
     .section__box-label {
@@ -219,6 +219,12 @@
 }
 
 @media (max-width: 1364px) {
+  .section__column {
+    &:not(:last-child) {
+      margin-right: 8.5%;
+    }
+  }
+
   .sections--home {
     .section__row {
       margin-top: 4rem;
@@ -233,6 +239,18 @@
 }
 
 @media (max-width: 991px) {
+  .section--our-passion {
+    margin-top: 2.4rem;
+  }
+
+  .section__column {
+    padding-top: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
   .section__box--grid.team {
     .grid__item {
       width: 33.33%;
@@ -254,6 +272,59 @@
 }
 
 @media (max-width: 599px) and (orientation: portrait) {
+  .section.section--our-passion {
+    margin-bottom: 8.4rem;
+
+    .section__row:last-child {
+      flex-direction: column;
+    }
+  }
+
+  .section__column {
+    padding-top: 4.8rem;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 8.4rem;
+    }
+  }
+  
+  .section__column-title {
+    margin: 2.4rem 0 0.8rem;
+    font-size: 1.8rem;
+  }
+  
+  .section__column-description {
+    text-align: center;
+  }
+
+  .section__box:not(.section__box--grid) {
+    padding: 2.2rem 1.8rem;
+  }
+
+  .section__box-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .section {
+    .form-field {
+      margin: 3.6rem 0;
+
+      &:first-child {
+        margin-top: 2.2rem;
+      }
+
+      + .form-field--checkbox {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .form-last-row {
+    justify-content: center;
+  }
+
   .section__row {
     &:not(:first-child) {
       margin-top: 3rem;
