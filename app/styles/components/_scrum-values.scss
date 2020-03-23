@@ -1,8 +1,25 @@
-.scrum-values {
-  .icon {
-    &.icon--rocket {
-      background-image: url('../../assets/inclined-rocket.svg');
-    }
+i.scrum-values__icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &--courage {
+    background-image: url('../../assets/career/icon_courage.svg');
+  }
+
+  &--focus {
+    background-image: url('../../assets/career/icon_focus.svg');
+  }
+
+  &--commitment {
+    background-image: url('../../assets/career/icon_commitment.svg');
+  }
+
+  &--respect {
+    background-image: url('../../assets/career/icon_respect.svg');
+  }
+
+  &--openness {
+    background-image: url('../../assets/career/icon_openness.svg');
   }
 }
 
