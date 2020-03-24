@@ -61,8 +61,8 @@
 }
 
 @media (max-width: 1024px) {
-  .main-post__banner .main-post {
-    > * {
+  body .main-post__banner .main-post {
+    > *:not(.underline):not(.underline--long) {
       width: 100%;
     }
   }

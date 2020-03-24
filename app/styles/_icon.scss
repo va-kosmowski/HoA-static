@@ -58,4 +58,8 @@ i {
     background-image: url('../assets/icon_hamburger.svg');
     width: 3.6rem;
   }
+
+  &.icon--attachment {
+    background-image: url('../assets/career/attachment-icon.png');
+  }
 }

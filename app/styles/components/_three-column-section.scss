@@ -1,4 +1,4 @@
-i.scrum-values__icon {
+i.three-column-section__icon {
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -23,18 +23,18 @@ i.scrum-values__icon {
   }
 }
 
-.scrum-values__wrapper {
+.three-column-section__wrapper {
   @include flex(center, stretch);
   flex-wrap: wrap;
   margin-top: 13.6rem;
 }
 
 @media (min-width: 1025px) {
-  .scrum-values__item {
+  .three-column-section__item {
     flex: 30%;
     max-width: 40%;
 
-    &:first-child {
+    &:nth-child(3n + 1):not(:nth-last-child(3) ) {
       margin-bottom: 13.6rem;
     }
 
@@ -44,11 +44,11 @@ i.scrum-values__icon {
   }
 }
 
-.scrum-values__item {
+.three-column-section__item {
   @include flex(flex-start, flex-start);
 }
 
-.scrum-values__item-icon-container {
+.three-column-section__item-icon-container {
   position: relative;
   @include flex(center, center);
   @include size(6rem);
@@ -67,20 +67,20 @@ i.scrum-values__icon {
   }
 }
 
-.scrum-values__item-title {
+.three-column-section__item-title {
   line-height: 1;
 }
 
-.scrum-values__item-description {
+.three-column-section__item-description {
   margin-top: 1rem;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  .section.scrum-values {
+  .section.three-column-section {
     margin-bottom: 14rem;
   }
 
-  .scrum-values__item {
+  .three-column-section__item {
     flex: 47.5%;
     max-width: 70%;
 
@@ -96,7 +96,7 @@ i.scrum-values__icon {
 
 
 @media (max-width: 599px) {
-  .section.scrum-values {
+  .section.three-column-section {
     margin-bottom: 11.6rem;
 
     .section__row:not(:first-child) {
@@ -104,7 +104,7 @@ i.scrum-values__icon {
     }
   }
 
-  .scrum-values__item {
+  .three-column-section__item {
     width: 100%;
 
     &:not(:last-child) {

@@ -1,5 +1,5 @@
 .career-banner__post {
-  > * {
+  > *:not(.career-banner__title-container) {
     width: 52rem;
   }
 
