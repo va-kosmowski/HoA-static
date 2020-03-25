@@ -5,6 +5,7 @@
     <title>House of Angular</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" default-src="unsafe-inline">
+    <meta name="theme-color" content="#173250">
     <link href="/dist/style.bundle.css" rel="stylesheet">
 </head>
 <body class="body--home">
@@ -56,7 +57,7 @@
 <div class="wrapper">
     <main class="hoa-content">
         <div class="sections sections--home">
-            <section class="section section--team">
+            <section class="section section--team" id="team">
                 <div class="section__row section__row--fdc">
                     <h3 class="section__title">Team</h3>
                     <div class="underline"></div>
@@ -68,8 +69,10 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
 
@@ -78,8 +81,10 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
 
@@ -88,8 +93,10 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
 
@@ -98,8 +105,10 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
 
@@ -108,8 +117,10 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
 
@@ -118,8 +129,10 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
 
@@ -128,8 +141,10 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
 
@@ -138,18 +153,20 @@
                                 <div class="team-member__avatar">
                                     <img src="./assets/blank-avatar.png" class="avatar" alt="Marcin">
                                 </div>
-                                <h4 class="team-member__name">Marcin</h4>
-                                <span class="team-member__role">Angular Team Leader</span>
+                                <div class="team-member__details">
+                                    <h4 class="team-member__name">Marcin</h4>
+                                    <span class="team-member__role">Angular Team Leader</span>
+                                </div>
                             </div>
                         </div>
                     </article>
                 </div>
                 <div class="section__row">
-                    <button type="button" class="button button--outlined">Meet Our Team</button>
+                    <a href="/team.html#team" class="button button--outlined">Meet Our Team</a>
                 </div>
             </section>
 
-            <section class="section section--trusted-us">
+            <section class="section section--trusted-us" id="trusted-us">
                 <div class="section__row section__row--fdc section__row--first">
                     <h3 class="section__title">Clients</h3>
                     <div class="underline"></div>
@@ -210,7 +227,7 @@
 
             <!-- References -->
 
-            <section class="section section--tips-card">
+            <section class="section section--tips-card" id="tips-card-footer">
                 <div class="section__row section__row--first">
                     <div class="tips-card">
                         <div class="tips-card__container tips-card__container--left">

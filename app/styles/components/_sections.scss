@@ -25,12 +25,38 @@
   }
 }
 
-.section--meet-our-team {
-  margin-top: 8rem;
+.section.section--meet-our-team {
+  flex-direction: row;
+  align-items: flex-start;
+
+  .section__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .meet-our-team__video-iframe {
-    width: 100%;
-    height: 66.4rem;
+    width: 60%;
+    height: 40rem;
+    background-color: #000;
+
+    &:last-child {
+      width: 100%;
+      height: 66.4rem;
+    }
+  }
+
+  .meet-our-team__aside {
+    width: 40%;
+    padding-top: 5.6rem;
+    margin-left: 4rem;
+  }
+
+  .meet-our-team__aside-title-underline {
+    margin-top: 2rem;
+  }
+
+  .meet-our-team__aside-description {
+    margin: 3rem 0;
   }
 }
 
@@ -155,12 +181,25 @@
 .section__box--framed {
   border: $main-border;
 }
-
-.section__box--grid {
-  @include flex(flex-start, flex-start);
+.section__box--grid,
+.section__box--grid-2-col {
+  @include flex(center, flex-start);
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
+}
+
+.section__box--grid {
+  .grid__item {
+    width: calc(25% + .1rem);
+  }
+}
+
+
+.section__box--grid-2-col {
+  .grid__item {
+    width: calc(50% + .1rem);
+  }
 }
 
 .section__box-title {
@@ -187,10 +226,8 @@
 
 .grid__item {
   @include flex(center, center);
-  width: calc(25% + .1rem);
   margin-bottom: -.1rem;
   margin-left: -.1rem;
-
 }
 
 .grid__item-logo {
