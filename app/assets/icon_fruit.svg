@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="63px" viewBox="0 0 59 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon_fruit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Angular-House---Update" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Job-Offer---Desktop-1200px" transform="translate(-359.000000, -2240.000000)">
+            <g id="Benefits" transform="translate(0.000000, 1953.000000)">
+                <g id="1" transform="translate(360.000000, 237.000000)">
+                    <g id="icon_fruit" transform="translate(0.000000, 51.000000)">
+                        <path d="M22.678,60.5 L10.322,60.5 C8.18202779,60.5022162 6.41936764,58.8197571 6.322,56.682 L4.5,16.5 L28.5,16.5 L26.674,56.682 C26.5767017,58.81821 24.8164247,60.5 22.678,60.5 Z" id="Path" stroke="#14223D" stroke-width="3" stroke-linecap="square"></path>
+                        <polyline id="Path" stroke="#14223D" stroke-width="3" stroke-linecap="square" points="0.5 0.5 10.5 0.5 16.5 48.5"></polyline>
+                        <path d="M34.5,29.663 C41.1819761,26.9659765 48.8423775,29.0683027 53.2116523,34.7982396 C57.5809271,40.5281766 57.5809271,48.4718234 53.2116523,54.2017604 C48.8423775,59.9316973 41.1819761,62.0340235 34.5,59.337" id="Path" stroke="#FC3B56" stroke-width="3" stroke-linecap="square"></path>
+                        <path d="M45.5,8.5 L45.5,8.5 L45.5,12.5 C45.5,15.1521649 44.4464316,17.695704 42.5710678,19.5710678 C40.695704,21.4464316 38.1521649,22.5 35.5,22.5 L35.5,22.5 L35.5,18.5 C35.5,12.9771525 39.9771525,8.5 45.5,8.5 Z" id="Path" stroke="#FC3B56" stroke-width="3" stroke-linecap="square"></path>
+                        <circle id="Oval" fill="#FC3B56" fill-rule="nonzero" cx="44" cy="53" r="1.5"></circle>
+                        <circle id="Oval" fill="#FC3B56" fill-rule="nonzero" cx="49" cy="48" r="1.5"></circle>
+                        <circle id="Oval" fill="#FC3B56" fill-rule="nonzero" cx="44" cy="44" r="1.5"></circle>
+                        <path d="M5.5,37.5 L27.5,37.5" id="Path" stroke="#14223D" stroke-width="3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

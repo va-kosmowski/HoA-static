@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="60px" viewBox="0 0 53 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon_support</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Angular-House---Update" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Job-Offer---Desktop-1200px" transform="translate(-776.000000, -2243.000000)" stroke-width="3">
+            <g id="Benefits" transform="translate(0.000000, 1953.000000)">
+                <g id="2" transform="translate(774.000000, 237.000000)">
+                    <g id="icon_support" transform="translate(3.000000, 54.000000)">
+                        <path d="M36.5,57.4999999 L36.5,30.316 L42.217,35.773 L37.311,43.188 C36.0736061,44.6730937 36.2744064,46.880106 37.7595001,48.1174999 C39.2445937,49.3548939 41.451606,49.1540936 42.689,47.669 L49.689,37.741 C50.8683066,36.3262579 50.7493942,34.2396073 49.417,32.968 L38.417,22.468 C37.7657912,21.8465232 36.9001701,21.4999999 36,21.4999999 L15,21.4999999 C14.0998299,21.4999999 13.2342088,21.8465232 12.583,22.468 L1.583,32.968 C0.250605771,34.2396073 0.131693352,36.3262579 1.311,37.741 L8.311,47.669 C9.54839398,49.1540937 11.7554063,49.354894 13.2405,48.1175 C14.7255937,46.880106 14.926394,44.6730937 13.689,43.188 L8.783,35.773 L14.5,30.316 L14.5,57.4999999" id="Path" stroke="#14223D"></path>
+                        <circle id="Oval" stroke="#14223D" cx="25.5" cy="8.5" r="8"></circle>
+                        <path d="M26.5,30.5 L31.5,30.5" id="Path" stroke="#FC3B56"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

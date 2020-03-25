@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="61px" viewBox="0 0 63 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon_sharing</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Angular-House---Update" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Job-Offer---Desktop-1200px" transform="translate(-1188.000000, -2470.000000)" stroke-width="3">
+            <g id="Benefits" transform="translate(0.000000, 1953.000000)">
+                <g id="6" transform="translate(1189.000000, 467.000000)">
+                    <g id="icon_sharing" transform="translate(0.000000, 51.000000)">
+                        <polygon id="Path" stroke="#FC3B56" points="60.5 0.5 26.5 0.5 26.5 28.5 36.5 20.5 60.5 20.5"></polygon>
+                        <circle id="Oval" stroke="#14223D" cx="48.5" cy="34.5" r="6"></circle>
+                        <circle id="Oval" stroke="#14223D" cx="12.5" cy="34.5" r="6"></circle>
+                        <path d="M24.5,58.5 L24.5,52.535 C24.5,51.115 23.755,49.809 22.533,49.086 C20.588,47.935 17.216,46.5 12.5,46.5 C7.723,46.5 4.373,47.926 2.448,49.075 C1.236,49.799 0.5,51.101 0.5,52.513 L0.5,58.5 L24.5,58.5 Z" id="Path" stroke="#14223D"></path>
+                        <path d="M60.5,58.5 L60.5,52.535 C60.5,51.115 59.755,49.809 58.533,49.086 C56.588,47.935 53.216,46.5 48.5,46.5 C43.723,46.5 40.373,47.926 38.448,49.075 C37.236,49.799 36.5,51.101 36.5,52.513 L36.5,58.5 L60.5,58.5 Z" id="Path" stroke="#14223D"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

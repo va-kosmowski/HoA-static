@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="58px" viewBox="0 0 63 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon_chill</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Angular-House---Update" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Job-Offer---Desktop-1200px" transform="translate(-773.000000, -2703.000000)" stroke-width="3">
+            <g id="Benefits" transform="translate(0.000000, 1953.000000)">
+                <g id="8" transform="translate(774.000000, 697.000000)">
+                    <g id="icon_chill" transform="translate(0.000000, 54.000000)">
+                        <path d="M46.279,47.157 L55.928,54.425 C58.025,56.001 60.955,54.15 60.441,51.574 L54.829,23.448 C53.964,19.112 50.166,15.991 45.754,15.991 C43.3,15.991 40.946,16.968 39.21,18.708 L37.423,20.5 L23.578,20.5 L21.791,18.708 C20.055,16.968 17.701,15.991 15.247,15.991 C10.836,15.991 7.037,19.112 6.172,23.448 L0.559,51.575 C0.045,54.151 2.975,56.002 5.072,54.426 L14.733,47.163" id="Path" stroke="#14223D"></path>
+                        <path d="M30.5,12.5 L30.5,0.5" id="Path" stroke="#FC3B56" stroke-linecap="square"></path>
+                        <path d="M36.5,42.5 L24.5,42.5" id="Path" stroke="#14223D" stroke-linecap="square"></path>
+                        <circle id="Oval" stroke="#FC3B56" stroke-linecap="square" cx="18.5" cy="42.5" r="6"></circle>
+                        <circle id="Oval" stroke="#FC3B56" stroke-linecap="square" cx="42.5" cy="42.5" r="6"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
