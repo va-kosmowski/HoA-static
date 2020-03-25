@@ -1,3 +1,10 @@
+i.icon--fb-button {
+  background-image: url('../../assets/career/icon_fb.png');
+}
+i.icon--ig-button {
+  background-image: url('../../assets/career/Group.png');
+}
+
 .find-us__block {
   position: relative;
   @include size(58rem, 36rem);
@@ -9,10 +16,11 @@
   }
 
   &--facebook {
-    background: url('../../assets/random-photo-1.jpg') center / cover;
+    background: url('../../assets/career/photo_facebook.png') center / cover;
 
     .find-us__block-overlay {
       background-color: $darker-color;
+      display: none;
     }
 
     .find-us__logo {
@@ -25,10 +33,11 @@
   }
 
   &--instagram {
-    background: url('../../assets/random-photo-2.jpg') center / cover;
+    background: url('../../assets/career/photo_instagram.png') center / cover;
 
     .find-us__block-overlay {
       background-color: #670C19;
+      display: none;
     }
 
     .find-us__logo {
@@ -37,10 +46,6 @@
 
     .find-us__button {
       color: $accents-color;
-
-      .icon {
-        fill: $accents-color;
-      }
     }
   }
 }

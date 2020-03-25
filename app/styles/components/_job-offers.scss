@@ -21,7 +21,7 @@
 
 $job-offer-transition:0.2s all ease-in-out;
 
-.job-offer {
+.job-offers__item {
   @include flex(flex-start, stretch);
   flex-direction: column;
   padding: 3.4rem 3rem;
@@ -34,15 +34,15 @@ $job-offer-transition:0.2s all ease-in-out;
     cursor: pointer;
     box-shadow: 0 2px 6px 0 rgba(20,35,62,0.2);
 
-    .job-offer__title a {
+    .job-offers__item-title a {
       color: #fff;
     }
 
-    .job-offer__location {
+    .job-offers__item-location {
       color: $accents-color-dark;
     }
 
-    .job-offer__tags {
+    .job-offers__item-tags {
       border-top-color: #fff;
     }
 
@@ -56,7 +56,7 @@ $job-offer-transition:0.2s all ease-in-out;
       }
     }
 
-    .job-offer__apply-button {
+    .job-offers__apply-button {
       background-color: #fff;
       border-color: #fff;
       color: $darker-color;
@@ -68,30 +68,30 @@ $job-offer-transition:0.2s all ease-in-out;
   }
 }
 
-.job-offer__title {
+.job-offers__item-title {
   a {
     color: $darker-color;
     transition: $job-offer-transition;
   }
 
-  + .job-offer__location {
+  + .job-offers__item-location {
     margin-top: 1rem;
   }
 }
 
-.job-offer__location {
+.job-offers__item-location {
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 500;
   color: $secondary-color;
   transition: $job-offer-transition;
 
-  + .job-offer__tags {
+  + .job-offers__item-tags {
     margin-top: 3rem;
   }
 }
 
-.job-offer__tags {
+.job-offers__item-tags {
   $job-offer-tag-margin-bottom: 0.9rem;
   padding: 3rem 0 3rem - $job-offer-tag-margin-bottom;
   border-top: 1px solid $border-color;
@@ -104,7 +104,7 @@ $job-offer-transition:0.2s all ease-in-out;
   }
 }
 
-.job-offer__apply-button {
+.job-offers__apply-button {
   transition: $job-offer-transition;
 }
 
@@ -127,7 +127,7 @@ $job-offer-transition:0.2s all ease-in-out;
     padding: 2.8rem 2.2rem;
   }
 
-  .job-offer__tags {
+  .job-offers__item-tags {
     padding: 2.2rem 0 1.6rem;
   }
 }

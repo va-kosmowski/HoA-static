@@ -1,0 +1,40 @@
+.job-offer {
+  margin-bottom: 10rem;
+}
+
+.job-offer__points-section {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+  a {
+    color: $anchor-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  + .job-offer__points-section {
+    margin-top: 7rem;
+  }
+}
+
+.job-offer__points-list {
+  margin-top: 3rem;
+}
+
+.job-offer__points-list-item {
+  @include flex(flex-start, center);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-right: 1.8rem;
+    @include size(1.6rem);
+    background: url('../../assets/career/job-offer-point.png') center / cover;
+  }
+
+  + .job-offer__points-list-item {
+    margin-top: 2.4rem;
+  }
+}

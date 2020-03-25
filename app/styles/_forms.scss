@@ -1,0 +1,24 @@
+.form-field {
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.form-field--checkbox {
+  flex-direction: row;
+
+  .checkbox {
+    @include absolute-size(1.6rem);
+    margin-top: 0.3rem;
+  }
+
+  .form-field__label {
+    margin-left: 1rem;
+    font-weight: 300;
+  }
+}
+
+.form-field__label {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}

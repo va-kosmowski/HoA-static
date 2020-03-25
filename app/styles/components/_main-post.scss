@@ -3,10 +3,6 @@
   @include flex(center, flex-end);
   @include size (100%, 60rem);
   background: left center / cover;
-
-  &.banner__hire {
-    background-image: url('../../assets/desktop_Hire us_photo.png');
-  }
 }
 
 .main-post__background-image,
@@ -32,7 +28,7 @@
   color: #fff;
 
   > * {
-    margin-right: 38rem !important;
+    width: 82rem;
   }
 }
 
@@ -65,8 +61,10 @@
 }
 
 @media (max-width: 1024px) {
-  .main-post > * {
-    margin-right: 0;
+  body .main-post__banner .main-post {
+    > *:not(.underline):not(.underline--long) {
+      width: 100%;
+    }
   }
 
   .main-post__banner {

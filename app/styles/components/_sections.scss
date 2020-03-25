@@ -169,10 +169,7 @@
 
 .section {
   .form-field {
-    @include flex(flex-start, flex-start);
-    flex-direction: column;
     margin: 3.6rem 0;
-    font-size: 1.4rem;
 
     &:first-child {
       margin-top: 4.5rem;
@@ -182,24 +179,6 @@
       margin: -1rem 0 4rem;
     }
   }
-
-  .form-field--checkbox {
-    flex-direction: row;
-
-    .checkbox {
-      @include size(1.6rem);
-    }
-
-    .section__box-label {
-      margin-left: 1rem;
-      font-weight: 300;
-    }
-  }
-}
-
-.section__box-label {
-  margin-bottom: 1rem;
-  font-weight: 500;
 }
 
 .form-last-row {
@@ -218,7 +197,28 @@
   width: 100%; // makes images blurred
 }
 
+.section--our-benefits {
+  position: relative;
+  padding: 10rem 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: $light-blue-color;
+  }
+}
+
 @media (max-width: 1364px) {
+  .section__column {
+    &:not(:last-child) {
+      margin-right: 8.5%;
+    }
+  }
+
   .sections--home {
     .section__row {
       margin-top: 4rem;
@@ -233,6 +233,18 @@
 }
 
 @media (max-width: 991px) {
+  .section--our-passion {
+    margin-top: 2.4rem;
+  }
+
+  .section__column {
+    padding-top: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
   .section__box--grid.team {
     .grid__item {
       width: 33.33%;
@@ -254,6 +266,59 @@
 }
 
 @media (max-width: 599px) and (orientation: portrait) {
+  .section.section--our-passion {
+    margin-bottom: 8.4rem;
+
+    .section__row:last-child {
+      flex-direction: column;
+    }
+  }
+
+  .section__column {
+    padding-top: 4.8rem;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 8.4rem;
+    }
+  }
+  
+  .section__column-title {
+    margin: 2.4rem 0 0.8rem;
+    font-size: 1.8rem;
+  }
+  
+  .section__column-description {
+    text-align: center;
+  }
+
+  .section__box:not(.section__box--grid) {
+    padding: 2.2rem 1.8rem;
+  }
+
+  .section__box-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .section {
+    .form-field {
+      margin: 3.6rem 0;
+
+      &:first-child {
+        margin-top: 2.2rem;
+      }
+
+      + .form-field--checkbox {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .form-last-row {
+    justify-content: center;
+  }
+
   .section__row {
     &:not(:first-child) {
       margin-top: 3rem;
