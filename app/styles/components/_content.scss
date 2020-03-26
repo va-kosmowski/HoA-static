@@ -55,7 +55,21 @@
 }
 
 .side-column {
-  width: 37rem;
+  width: 35rem;
+
+  h3, .h3 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1364px) {
+  .main-column {
+    margin-right: 3.5%;
+  }
+
+  .side-column {
+    width: 30%;
+  }
 }
 
 
