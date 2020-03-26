@@ -1,0 +1,73 @@
+.skills-needed {
+  padding: 2.4rem 3rem;
+  margin: 3rem 0;
+  border: $main-border;
+}
+
+.skills-needed__title {
+}
+
+.skills-needed__grid {
+  @include flex(flex-start, flex-start);
+  flex-wrap: wrap;
+
+  .skills-needed__skill {
+    width: 20%;
+    padding: 3rem 0;
+
+    &:not(:nth-child(4n)) {
+      margin-right: calc(20% / 3);
+    }
+  }
+}
+
+.skills-needed__skill-level {
+  position: relative;
+  @include size(1.2rem);
+  border-radius: 50%;
+  background-color: $accents-color;
+
+  &::after {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $secondary-color;
+  }
+}
+
+.skill-level-dots {
+  $spacing: 2.2rem;
+  $gray-dot: 0 0 $secondary-color;
+  $red-dot: 0 0 $accents-color;
+  &--weak {
+    box-shadow: $spacing $gray-dot, $spacing*2 $gray-dot, $spacing*3 $gray-dot, $spacing*4 $gray-dot;
+    &::after { content: 'Weak'; }
+  }
+
+  &--junior {
+    box-shadow: $spacing $red-dot, $spacing*2 $gray-dot, $spacing*3 $gray-dot, $spacing*4 $gray-dot;
+    &::after { content: 'Junior'; }
+  }
+
+  &--mid {
+    box-shadow: $spacing $red-dot, $spacing*2 $red-dot, $spacing*3 $gray-dot, $spacing*4 $gray-dot;
+    &::after { content: 'Mid'; }
+  }
+
+  &--advanced {
+    box-shadow: $spacing $red-dot, $spacing*2 $red-dot, $spacing*3 $red-dot, $spacing*4 $gray-dot;
+    &::after { content: 'Advanced'; }
+  }
+
+  &--master {
+    box-shadow: $spacing $red-dot, $spacing*2 $red-dot, $spacing*3 $red-dot, $spacing*4 $red-dot;
+    &::after { content: 'Master'; }
+  }
+}
+
+.skills-needed__skill-name {
+  margin-top: 0.6rem;
+  font-weight: 500;
+}

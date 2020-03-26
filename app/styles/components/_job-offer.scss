@@ -1,10 +1,18 @@
 .job-offer {
   margin-bottom: 10rem;
+
+  .post__title {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  .side-column {
+    margin-top: 3rem;
+  }
 }
 
 .job-offer__points-section {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  padding: 3rem 0 1rem;
 
   a {
     color: $anchor-color;
@@ -15,7 +23,7 @@
   }
 
   + .job-offer__points-section {
-    margin-top: 7rem;
+    padding-top: 7rem;
   }
 }
 
