@@ -4,9 +4,6 @@
   border: $main-border;
 }
 
-.skills-needed__title {
-}
-
 .skills-needed__grid {
   @include flex(flex-start, flex-start);
   flex-wrap: wrap;
@@ -17,6 +14,11 @@
 
     &:not(:nth-child(4n)) {
       margin-right: calc(20% / 3);
+    }
+
+    .skills-needed__skill-name {
+      margin-top: 0.6rem;
+      font-weight: 500;
     }
   }
 }
@@ -65,9 +67,4 @@
     box-shadow: $spacing $red-dot, $spacing*2 $red-dot, $spacing*3 $red-dot, $spacing*4 $red-dot;
     &::after { content: 'Master'; }
   }
-}
-
-.skills-needed__skill-name {
-  margin-top: 0.6rem;
-  font-weight: 500;
 }

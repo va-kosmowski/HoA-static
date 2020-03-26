@@ -62,6 +62,16 @@
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1364px) {
+  .main-column {
+    margin-right: 3.5%;
+  }
+
+  .side-column {
+    width: 30%;
+  }
+}
+
 
 @media (max-width: 991px) {
   .header__top-bar,

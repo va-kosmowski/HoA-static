@@ -55,6 +55,26 @@ body {
   }
 }
 
-.job-offer__apply-button {
+@media (min-width: 1025px) {
+  .desktop-hide {
+    display: none;
+  }
+}
 
+@media (min-width: 600px) and (max-width: 1024px) {
+  .tablet-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tablet-down-hide {
+    display: none;
+  }
 }
