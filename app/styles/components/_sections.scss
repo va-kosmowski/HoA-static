@@ -352,16 +352,6 @@
     }
   }
 
-  //.section__box--grid.team {
-  //  .grid__item {
-  //    width: 33.33%;
-  //
-  //    &:nth-child(n + 7) {
-  //      display: none;
-  //    }
-  //  }
-  //}
-
   .section--meet-our-team {
     margin-top: 2rem;
 
@@ -495,5 +485,9 @@
     .meet-our-team__aside-description {
       margin: 2rem 3rem;
     }
+  }
+
+  .section--our-benefits {
+    padding: 5.5rem 0;
   }
 }

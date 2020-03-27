@@ -54,3 +54,12 @@
   margin-right: 2rem;
 }
 
+@media (max-width: 599px) {
+  .post {
+    margin-top: 2rem;
+  }
+
+  .post__title {
+    margin-bottom: 1rem;
+  }
+}

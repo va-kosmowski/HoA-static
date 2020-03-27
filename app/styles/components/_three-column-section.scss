@@ -147,4 +147,36 @@ i.three-column-section__icon {
       margin-bottom: 12.8rem;
     }
   }
+
+  .our-benefits.three-column-section {
+    margin-bottom: 7.6rem;
+
+    .section__row:not(:first-child) {
+      margin-top: 4.5rem;
+    }
+
+    .three-column-section__item {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-column-section__item-icon-container {
+      margin-right: 0;
+    }
+
+    .three-column-section__item-content {
+      padding: 2.5rem 3rem 0;
+      text-align: center;
+    }
+
+    .three-column-section__item-description {
+      font-size: 1.6rem;
+    }
+
+    .three-column-section__item {
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
+  }
 }

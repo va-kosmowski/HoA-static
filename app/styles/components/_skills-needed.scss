@@ -19,6 +19,7 @@
     .skills-needed__skill-name {
       margin-top: 0.6rem;
       font-weight: 500;
+      display: inline-block;
     }
   }
 }
@@ -66,5 +67,39 @@
   &--master {
     box-shadow: $spacing $red-dot, $spacing*2 $red-dot, $spacing*3 $red-dot, $spacing*4 $red-dot;
     &::after { content: 'Master'; }
+  }
+}
+
+@media (max-width: 599px) {
+  .skills-needed {
+    padding: 1.6rem 2rem;
+    margin: 2rem 0;
+  }
+
+  .skills-needed__grid {
+    padding-top: .5rem;
+
+    .skills-needed__skill {
+      width: 40%;
+
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+
+      &:not(:nth-child(2n)) {
+        margin-right: 20%;
+      }
+
+      .skills-needed__skill-name {
+        margin-top: 0.3rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .skills-needed__skill-level {
+    &::after {
+      top: 3.8rem;
+    }
   }
 }

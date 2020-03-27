@@ -184,6 +184,7 @@ $job-offer-transition:0.2s all ease-in-out;
 @media (max-width: 599px) {
   .job-offers__item {
     width: 100%;
+    padding: 1.6rem 1.8rem;
 
     &:not(:nth-child(n + 6)) {
       margin-bottom: 2rem;
@@ -192,5 +193,23 @@ $job-offer-transition:0.2s all ease-in-out;
     &:nth-child(n + 7) {
       display: none;
     }
+  }
+
+  .job-offers__item-title {
+    font-size: 1.8rem;
+
+    + .job-offers__item-location {
+      margin-top: .6rem;
+    }
+  }
+
+  .job-offers__item-location {
+    + .job-offers__item-tags {
+      margin-top: 1.8rem;
+    }
+  }
+
+  .job-offers__item-tags {
+    padding: 1.8rem 0 2rem;
   }
 }

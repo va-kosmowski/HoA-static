@@ -55,3 +55,42 @@
     margin-top: 2.4rem;
   }
 }
+
+.job-offer__apply-button {
+  width: 27rem;
+  margin-top: 5rem;
+  display: inline-block;
+}
+
+@media (max-width: 599px) {
+  .job-offer {
+    padding: 0;
+  }
+
+  .job-offer__points-section {
+    padding-top: 2rem;
+
+    + .job-offer__points-section {
+      padding-top: 4.5rem;
+    }
+  }
+
+  .job-offer__points-list {
+    margin-top: 4rem;
+  }
+
+  .job-offer__points-list-item {
+    &::before {
+      margin-right: 0.8rem;
+    }
+
+    + .job-offer__points-list-item {
+      margin-top: 2rem;
+    }
+  }
+
+  .job-offer__apply-button {
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
