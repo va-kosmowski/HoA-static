@@ -179,7 +179,7 @@
 }
 
 .section__column--with-pattern {
-  background: url('../../assets/Pattern.svg') no-repeat center / cover;
+  background: url('./../assets/Pattern.svg') no-repeat center / cover;
 }
 
 .section__column-title {
@@ -196,7 +196,35 @@
 }
 
 .section__box--framed {
+  position: relative;
   border: $main-border;
+
+  .form-submitted {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    will-change: opacity, pointer-events;
+    transition: 0.5s ease-in-out;
+
+    &.display-flex {
+      display: flex !important;
+    }
+
+    &.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
 }
 .section__box--grid,
 .section__box--grid-2-col {

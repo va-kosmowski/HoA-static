@@ -31,7 +31,7 @@
     @include flex(flex-start, center);
     flex-direction: column;
     padding: 3rem;
-    background: $darker-color url('../../assets/Pattern_horizontal.svg') center / cover;
+    background: $darker-color url('./../assets/Pattern_horizontal.svg') center / cover;
     color: #fff;
     margin-bottom: 1rem;
 }

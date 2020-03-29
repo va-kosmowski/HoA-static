@@ -19,37 +19,36 @@
                     data: $('form').serialize(),
                     success: function () {
                         setTimeout(() => thankYou.classList.add('show'), 1000);
-                    },
-                    error: function () {
-                        setTimeout(() => thankYou.classList.add('show'), 1000);
-                    },
+                    }
                 });
             });
         });
     </script>
-    <link href="/dist/style.bundle.css" rel="stylesheet">
+    <link href="style.todeploy.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <div class="header__top-bar">
         <div>
-            <a href="/home" class="header__logo-container">
+            <a href="./home" class="header__logo-container">
                 <img class="header__logo" src="./assets/Logo%20-%20main%20color.svg" alt="House of Angular">
             </a>
         </div>
        <nav class="nav main-nav" aria-label="primary">
             <ul>
-                <li class="nav__item"><a class="nav__item-link" href="/home">Home</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="/team">Team</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="/career">Career</a></li>
-                <li class="nav__item"><a class="nav__item-link nav__item-link--active" href="/hire">Hire Us</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="home.html">Home</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="team.html">Team</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="./career.html">Career</a></li>
+                <li class="nav__item"><a class="nav__item-link nav__item-link--active" href="./hire.html">Hire Us</a></li>
             </ul>
         </nav>
         <nav class="nav main-nav--mobile" aria-label="mobile">
             <ul class="nav__container--mobile">
-                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/team">Team</a></li>
-                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/career">Career</a></li>
-                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/hire">Hire Us</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="team.html">Team</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="./career.html">Career</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="./hire.html">Hire Us</a></li>
+                <li class="nav__item--mobile">
+                </li>
             </ul>
         </nav>
         <div class="nav__backdrop--mobile toggle-menu"></div>
@@ -119,17 +118,17 @@
                         <form>
                             <div class="form-field">
                                 <label class="section__box-label form-field__label" for="name">First and Last Name</label>
-                                <input type="text" required id="name" class="common-input input"
+                                <input type="text" id="name" class="common-input input"
                                        placeholder="Jan Kowalski" name="name">
                             </div>
                             <div class="form-field">
                                 <label class="section__box-label form-field__label" for="email">Email</label>
-                                <input type="email" required id="email" class="common-input input"
+                                <input type="email" id="email" class="common-input input"
                                        placeholder="john@company.com" name="email">
                             </div>
                             <div class="form-field">
                                 <label class="section__box-label form-field__label" for="topic">Subject</label>
-                                <select id="topic" required class="common-input select" name="topic">
+                                <select id="topic" class="common-input select" name="topic">
                                     <option name="topic-consulting" value="Consulting">Consulting</option>
                                     <option name="topic-audit" value="Audit">Audit</option>
                                     <option name="topic-development" value="Development">Development</option>
@@ -137,11 +136,11 @@
                             </div>
                             <div class="form-field">
                                 <label class="section__box-label form-field__label" for="message">Content</label>
-                                <textarea id="message" required class="common-input textarea"
+                                <textarea id="message" class="common-input textarea"
                                           placeholder="Write your message here..." name="message"></textarea>
                             </div>
                             <div class="form-field form-field--checkbox">
-                                <input type="checkbox" id="accept" required class="common-input checkbox" name="accept">
+                                <input type="checkbox" required id="accept" class="common-input checkbox" name="accept">
                                 <label class="section__box-label form-field__label" for="accept">
                                     <span>By sending a message you agree to process your personal data</span>
                                 </label>
@@ -216,18 +215,18 @@
         <footer class="footer">
             <div class="footer__row">
                 <div class="footer__logo">
-                    <a href="/home"><img src="./assets/HouseofAngular.svg" alt="House of Angular"></a>
+                    <a href="home.html"><img src="./assets/HouseofAngular.svg" alt="House of Angular"></a>
                 </div>
                 <div class="footer__shortcuts">
                    <ul class="nav footer-nav">
                         <li class="nav__item footer-nav__item">
-                            <a class="nav__item-link footer-nav__item-link" href="/team">Team</a>
+                            <a class="nav__item-link footer-nav__item-link" href="team.html">Team</a>
                         </li>
                         <li class="nav__item footer-nav__item">
-                            <a class="nav__item-link footer-nav__item-link" href="/career">Career</a>
+                            <a class="nav__item-link footer-nav__item-link" href="./career.html">Career</a>
                         </li>
                         <li class="nav__item footer-nav__item">
-                            <a class="nav__item-link footer-nav__item-link" href="/hire">Hire Us</a>
+                            <a class="nav__item-link footer-nav__item-link" href="./hire.html">Hire Us</a>
                         </li>
                         <li class="nav__item footer-nav__item">
                             <a class="nav__item-link footer-nav__item-link" href="#">Privacy Policy</a>

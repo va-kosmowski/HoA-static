@@ -44,6 +44,7 @@ function liveReload(done) {
                 '/dist': 'dist/',
                 '/blog': 'app/blog.html',
                 '/hire': 'app/hire.html',
+                '/post': 'app/post.php',
                 '/career': 'app/career.html',
                 '/team': 'app/team.html',
                 '/knowledgebase': 'app/knowledgebase.html',

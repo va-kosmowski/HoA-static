@@ -22,7 +22,7 @@
 .post__banner {
   @include size(100%, 36rem);
   margin: 2rem 0;
-  background: url('../../assets/blog-post-banner.png') center / cover;
+  background: url('./../assets/blog-post-banner.png') center / cover;
 }
 
 .post__contents {
