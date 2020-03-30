@@ -234,6 +234,39 @@
   padding: 0;
 }
 
+.section__box--grid--logos {
+  justify-content: flex-start;
+
+  .grid__item {
+    border: $main-border;
+    transition: 0.25s ease-in-out;
+
+    > img {
+      filter: grayscale(1);
+      transition: filter 0.25s ease-in-out;
+    }
+
+    &:hover {
+      background-color: #fff;
+      transform: scale(1.04);
+      border-color: rgba($secondary-color, 0.5);
+
+      > img {
+        filter: none;
+      }
+    }
+  }
+
+  &-on-white {
+    .grid__item {
+      &:hover {
+        background-color: $light-blue-color;
+      }
+    }
+
+  }
+}
+
 .section__box--grid {
   .grid__item {
     width: calc(25% + .1rem);
