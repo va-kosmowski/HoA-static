@@ -3,59 +3,59 @@ i.three-column-section__icon {
   background-repeat: no-repeat;
 
   &--courage {
-    background-image: url('../../assets/career/icon_courage.svg');
+    background-image: url('./../assets/career/icon_courage.svg');
   }
 
   &--focus {
-    background-image: url('../../assets/career/icon_focus.svg');
+    background-image: url('./../assets/career/icon_focus.svg');
   }
 
   &--commitment {
-    background-image: url('../../assets/career/icon_commitment.svg');
+    background-image: url('./../assets/career/icon_commitment.svg');
   }
 
   &--respect {
-    background-image: url('../../assets/career/icon_respect.svg');
+    background-image: url('./../assets/career/icon_respect.svg');
   }
 
   &--openness {
-    background-image: url('../../assets/career/icon_openness.svg');
+    background-image: url('./../assets/career/icon_openness.svg');
   }
 
   &--fruits-drinks {
-    background-image: url('../../assets/icon_fruit.svg');
+    background-image: url('./../assets/icon_fruit.svg');
   }
 
   &--leader-support {
-    background-image: url('../../assets/icon_support.svg');
+    background-image: url('./../assets/icon_support.svg');
   }
 
   &--remote-work {
-    background-image: url('../../assets/icon_remote.svg');
+    background-image: url('./../assets/icon_remote.svg');
   }
 
   &--multisport {
-    background-image: url('../../assets/icon_sport.svg');
+    background-image: url('./../assets/icon_sport.svg');
   }
 
   &--computer {
-    background-image: url('../../assets/icon_computer.svg');
+    background-image: url('./../assets/icon_computer.svg');
   }
 
   &--chill-room {
-    background-image: url('../../assets/icon_chill.svg');
+    background-image: url('./../assets/icon_chill.svg');
   }
 
   &--sharing-experience {
-    background-image: url('../../assets/icon_sharing.svg');
+    background-image: url('./../assets/icon_sharing.svg');
   }
 
   &--flexible-hours {
-    background-image: url('../../assets/icon_hours.svg');
+    background-image: url('./../assets/icon_hours.svg');
   }
 
   &--fridge {
-    background-image: url('../../assets/icon_snack.svg');
+    background-image: url('./../assets/icon_snack.svg');
   }
 }
 
@@ -98,7 +98,7 @@ i.three-column-section__icon {
     content: '';
     position: absolute;
     left: 0;
-    background-image: url('../../assets/common/small_Pattern.png');
+    background-image: url('./../assets/common/small_Pattern.png');
     @include size(20rem);
   }
 }
@@ -145,6 +145,38 @@ i.three-column-section__icon {
 
     &:not(:last-child) {
       margin-bottom: 12.8rem;
+    }
+  }
+
+  .our-benefits.three-column-section {
+    margin-bottom: 7.6rem;
+
+    .section__row:not(:first-child) {
+      margin-top: 4.5rem;
+    }
+
+    .three-column-section__item {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .three-column-section__item-icon-container {
+      margin-right: 0;
+    }
+
+    .three-column-section__item-content {
+      padding: 2.5rem 3rem 0;
+      text-align: center;
+    }
+
+    .three-column-section__item-description {
+      font-size: 1.6rem;
+    }
+
+    .three-column-section__item {
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
     }
   }
 }

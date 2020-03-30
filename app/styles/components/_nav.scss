@@ -63,17 +63,22 @@
     pointer-events: none;
     opacity: 0;
     transition: 0.25s;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 
     &.nav__backdrop--show {
       opacity: 1;
       pointer-events: all;
     }
   }
+
+  > .nav__container--mobile {
+    align-items: stretch;
+  }
 }
 
 .nav__container--mobile {
   width: 100%;
+  flex-direction: column;
   right: 0;
   top: 0;
   overflow: hidden;
@@ -82,19 +87,18 @@
   list-style: none;
 }
 
+.nav__item-link--mobile {
+  display: block;
+}
+
 .nav__item--mobile {
-  display: flex;
   padding: 0 2rem;
 
   > a:not(.button) {
     width: 100%;
     padding: 1rem;
     border-bottom: $main-border;
-    color: $anchor-color;
-
-    &:visited {
-      color: $triary-color;
-    }
+    color: $triary-color;
   }
 
   &:hover,
@@ -135,6 +139,8 @@
   }
 
   .main-nav--mobile {
-    display: block;
+    &.main-nav--show {
+      display: flex;
+    }
   }
 }

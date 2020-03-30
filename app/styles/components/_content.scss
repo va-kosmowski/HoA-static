@@ -22,7 +22,7 @@
 
 .breadcrumbs {
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -79,5 +79,11 @@
   .hoa-content {
     min-width: auto;
     padding: 0 $content-padding-phone;
+  }
+}
+
+@media (max-width: 599px) {
+  .main-column {
+    margin-right: 0;
   }
 }
