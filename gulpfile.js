@@ -51,20 +51,8 @@ function liveReload(done) {
                 '/home': 'app/home.html',
                 '/open-source': 'app/open-source.html',
                 '/job-offer': 'app/job-offer.html',
-                '/job-offer-angular-medium': 'app/job-offer-angular-medium.html',
+                '/job-offer-angular-mid': 'app/job-offer-angular-mid.html',
                 '/job-offer-angular-junior': 'app/job-offer-angular-junior.html',
-                '/job-offer-1': 'app/job-offer-1.html',
-                '/job-offer-2': 'app/job-offer-2.html',
-                '/job-offer-3': 'app/job-offer-3.html',
-                '/job-offer-4': 'app/job-offer-4.html',
-                '/job-offer-5': 'app/job-offer-5.html',
-                '/job-offer-6': 'app/job-offer-6.html',
-                '/job-offer-7': 'app/job-offer-7.html',
-                '/job-offer-8': 'app/job-offer-8.html',
-                '/job-offer-9': 'app/job-offer-9.html',
-                '/job-offer-10': 'app/job-offer-10.html',
-                '/job-offer-11': 'app/job-offer-511html',
-                '/job-offer-12': 'app/job-offer-6.12tml',
             }
         }
     });
