@@ -62,6 +62,47 @@
   display: inline-block;
 }
 
+.job-offer__team-leader {
+  width: 100%;
+  @include flex(center, flex-start);
+  padding: 5rem 0;
+
+  .team-leader__wrapper {
+    @include flex(flex-start, flex-start);
+    width: 58rem;
+  }
+
+  .team-leader__avatar {
+    @include size(16.4rem);
+    margin-right: 3rem;
+  }
+
+  .team-leader__name {
+    line-height: 1;
+  }
+
+  .team-leader__role {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $secondary-color;
+  }
+
+  .underline {
+    margin-bottom: 1rem;
+  }
+
+  .team-leader__message {
+    font-weight: 400;
+  }
+
+  .team-leader__details-container {
+    flex: 1;
+    @include flex(flex-start, stretch);
+    flex-direction: column;
+  }
+}
+
+
 @media (max-width: 599px) {
   .job-offer {
     padding: 0;
@@ -92,5 +133,35 @@
   .job-offer__apply-button {
     width: 100%;
     margin-top: 3rem;
+  }
+
+  .job-offer__team-leader {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 5rem;
+
+    .team-leader__wrapper {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .team-leader__avatar {
+      @include size(14rem);
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+
+    .team-leader__details-container {
+      align-items: center;
+    }
+
+    .team-leader__role {
+      margin-top: .5rem;
+    }
+    
+    .team-leader__message {
+      text-align: center;
+    }
   }
 }

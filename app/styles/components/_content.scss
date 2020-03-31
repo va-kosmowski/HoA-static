@@ -40,7 +40,7 @@
 }
 
 .breadcrumbs__link {
-  color: $triary-color;
+  color: $tertiary-color;
 }
 
 .articles {
@@ -72,6 +72,11 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .main-column {
+    margin-right: 0;
+  }
+}
 
 @media (max-width: 991px) {
   .header__top-bar,
@@ -79,11 +84,5 @@
   .hoa-content {
     min-width: auto;
     padding: 0 $content-padding-phone;
-  }
-}
-
-@media (max-width: 599px) {
-  .main-column {
-    margin-right: 0;
   }
 }
