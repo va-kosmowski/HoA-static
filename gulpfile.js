@@ -51,6 +51,8 @@ function liveReload(done) {
                 '/home': 'app/home.html',
                 '/open-source': 'app/open-source.html',
                 '/job-offer': 'app/job-offer.html',
+                '/job-offer-angular-medium': 'app/job-offer-angular-medium.html',
+                '/job-offer-angular-junior': 'app/job-offer-angular-junior.html',
                 '/job-offer-1': 'app/job-offer-1.html',
                 '/job-offer-2': 'app/job-offer-2.html',
                 '/job-offer-3': 'app/job-offer-3.html',

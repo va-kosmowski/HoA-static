@@ -16,7 +16,7 @@ i.icon--ig-button {
   }
 
   &--facebook {
-    background: url('./../assets/career/photo_facebook.png') center / cover;
+    background: url('./../assets/facebook-background.jpg') center / cover;
 
     .find-us__block-overlay {
       background-color: $darker-color;
@@ -33,7 +33,7 @@ i.icon--ig-button {
   }
 
   &--instagram {
-    background: url('./../assets/career/photo_instagram.png') center / cover;
+    background: url('./../assets/instagram-background.jpg') center / cover;
 
     .find-us__block-overlay {
       background-color: #670C19;
