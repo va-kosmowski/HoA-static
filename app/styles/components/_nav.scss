@@ -36,7 +36,7 @@
 
   &:hover,
   &--active {
-    border-bottom: $menu-item-border-width solid $triary-color;
+    border-bottom: $menu-item-border-width solid $tertiary-color;
   }
 }
 
@@ -98,7 +98,7 @@
     width: 100%;
     padding: 1rem;
     border-bottom: $main-border;
-    color: $triary-color;
+    color: $tertiary-color;
   }
 
   &:hover,

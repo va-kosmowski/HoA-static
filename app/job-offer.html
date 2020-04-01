@@ -1,420 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>House of Angular</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" default-src="unsafe-inline">
-<meta name="theme-color" content="#173250">
-<link href="/dist/style.bundle.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>House of Angular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" script-src="unsafe-inline" default-src="unsafe-inline">
+    <meta name="theme-color" content="#173250">
+    <link href="/dist/style.bundle.css" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
-		<div class="header__top-bar">
-			<div>
-				<a href="/home" class="header__logo-container"> <img class="header__logo" src="./assets/Logo%20-%20main%20color.svg" alt="House of Angular">
-				</a>
-			</div>
-			<nav class="nav main-nav" aria-label="primary">
-				<ul>
-					<li class="nav__item"><a class="nav__item-link" href="/home">Main Page</a></li>
-					<li class="nav__item"><a class="nav__item-link" href="/team">Team</a></li>
-					<li class="nav__item"><a class="nav__item-link nav__item-link--active" href="/career">Career</a></li>
-					<li class="nav__item"><a class="nav__item-link" href="/hire">Hire Us</a></li>
-				</ul>
-			</nav>
-			<nav class="nav main-nav--mobile" aria-label="mobile">
-				<ul class="nav__container--mobile">
-					<li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/team">Team</a></li>
-					<li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/career">Career</a></li>
-					<li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/hire">Hire Us</a></li>
-				</ul>
-			</nav>
-			<div class="nav__backdrop--mobile toggle-menu"></div>
+<header class="header">
+    <div class="header__top-bar">
+        <div>
+            <a href="/home" class="header__logo-container">
+                <img class="header__logo" src="./assets/Logo%20-%20main%20color.svg" alt="House of Angular">
+            </a>
+        </div>
+       <nav class="nav main-nav" aria-label="primary">
+            <ul>
+                <li class="nav__item"><a class="nav__item-link" href="/home">Main Page</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/team">Team</a></li>
+                <li class="nav__item"><a class="nav__item-link nav__item-link--active" href="/career">Career</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="/hire">Hire Us</a></li>
+            </ul>
+        </nav>
+        <nav class="nav main-nav--mobile" aria-label="mobile">
+            <ul class="nav__container--mobile">
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/team">Team</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/career">Career</a></li>
+                <li class="nav__item--mobile"><a class="nav__item-link--mobile" href="/hire">Hire Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav__backdrop--mobile toggle-menu"></div>
 
-			<button class="button button--flat header__hamburger-button toggle-menu">
-				<i class="icon icon--hamburger"></i>
-			</button>
-		</div>
-	</header>
-	<div class="wrapper">
-		<main class="hoa-content">
-		<ul class="breadcrumbs">
-			<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/home">Main Page</a></li>
-			<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/career">Career</a></li>
-			<li class="breadcrumbs__item"><span class="breadcrumbs__current-location">Senior Angular Developer</span></li>
-		</ul>
-		<div class="articles job-offer">
-			<section class="post main-column">
-				<div class="post__main">
-					<h3 class="post__title">Senior Angular Developer</h3>
-					<div class="post__contents">
-						<p>We’re looking for a team player to Angular team of talented and passionate Developers responsible for designing, building and maintaining the most successful application of varying scale and complexity. If you are eager to join team of
-							Angular enthusiasts send your CV.</p>
-						<!--                        <div class="post__banner" style="background-image: url('assets/career/example-post-banner.png'); height: 43rem;"></div>-->
-						<div class="skills-needed">
-							<h4 class="skills-needed__title">Skills needed</h4>
-							<div class="skills-needed__grid">
-								<div class="skills-needed__skill">
-									<div class="skills-needed__skill-level skill-level-dots--advanced"></div>
-									<span class="skills-needed__skill-name">Html/CSS</span>
-								</div>
+        <button class="button button--flat header__hamburger-button toggle-menu">
+            <i class="icon icon--hamburger"></i>
+        </button>
+    </div>
+</header>
+<div class="wrapper">
+    <main class="hoa-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/home">Main Page</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="/career">Career</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current-location">Senior Angular Developer</span>
+            </li>
+        </ul>
+        <div class="articles job-offer">
+            <section class="post main-column">
+                <div class="post__main">
+                    <h3 class="post__title">Senior Angular Developer</h3>
+                    <div class="post__contents">
+                        <p>We’re looking for a team player for Angular team of talented and passionate Developers responsible for designing, building and maintaining the most successful application of varying scale and complexity. If you are eager to join team of Angular enthusiasts send your CV.</p>
+<!--                        <div class="post__banner" style="background-image: url('assets/career/example-post-banner.png'); height: 43rem;"></div>-->
+                        <div class="skills-needed">
+                            <h4 class="skills-needed__title">Skills needed</h4>
+                            <div class="skills-needed__grid">
+                                <div class="skills-needed__skill">
+                                    <div class="skills-needed__skill-level skill-level-dots--advanced"></div>
+                                    <span class="skills-needed__skill-name">Html/CSS</span>
+                                </div>
 
-								<div class="skills-needed__skill">
-									<div class="skills-needed__skill-level skill-level-dots--master"></div>
-									<span class="skills-needed__skill-name">JavaScript</span>
-								</div>
+                                <div class="skills-needed__skill">
+                                    <div class="skills-needed__skill-level skill-level-dots--master"></div>
+                                    <span class="skills-needed__skill-name">JavaScript</span>
+                                </div>
 
-								<div class="skills-needed__skill">
-									<div class="skills-needed__skill-level skill-level-dots--master"></div>
-									<span class="skills-needed__skill-name">Angular</span>
-								</div>
+                                <div class="skills-needed__skill">
+                                    <div class="skills-needed__skill-level skill-level-dots--master"></div>
+                                    <span class="skills-needed__skill-name">Angular</span>
+                                </div>
 
-								<div class="skills-needed__skill">
-									<div class="skills-needed__skill-level skill-level-dots--advanced"></div>
-									<span class="skills-needed__skill-name">English</span>
-								</div>
-							</div>
-						</div>
-
-
-
-
-
-
-
-
-
-						<div class="job-offer__points-section">
-							<h4 class="job-offer-points-title">What You'll Get?</h4>
-							<div class="underline underline--long"></div>
-							<ul class="job-offer__points-list">
-								<li class="job-offer__points-list-item"><span>Learning under the guidance of <span class="contents--bold">more experienced programmers - 10+ people in the Angular team </span></li>
-								<li class="job-offer__points-list-item"><span>Flexible options for technology development and selection</span></li>
-								<li class="job-offer__points-list-item"><span>Interesting and challenging projects </span></li>
-								<li class="job-offer__points-list-item"><span>Dedicated people for HTML / CSS in the team </span></li>
-								<li class="job-offer__points-list-item"><span>Lack of corporate principles and a positive atmosphere at work </span></li>
-								<li class="job-offer__points-list-item"><span>Comfortable working conditions (stocked kitchen, fun room, play room, etc.)</span></li>
-							</ul>
-						</div>
-
-
-
-						<div class="job-offer__points-section">
-							<h4 class="job-offer-points-title">We want from You</h4>
-							<div class="underline underline--long"></div>
-							<ul class="job-offer__points-list">
-								<li class="job-offer__points-list-item"><span>5 or more years of development experience</span></li>
-								<li class="job-offer__points-list-item"><span>Great knowledge of JavaScript, TypeScript and RxJS</span></li>
-								<li class="job-offer__points-list-item"><span>Pro-active and pro team attitude to work</span></li>
-							</ul>
-						</div>
+                                <div class="skills-needed__skill">
+                                    <div class="skills-needed__skill-level skill-level-dots--advanced"></div>
+                                    <span class="skills-needed__skill-name">English</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="job-offer__team-leader team-leader">
+                            <div class="team-leader__wrapper">
+                                <div class="team-leader__avatar">
+                                    <img src="./assets/team/krzysztofs.jpg" class="avatar" alt="Krzysiek">
+                                </div>
+                                <div class="team-leader__details-container">
+                                    <h2 class="team-leader__name">Krzysztof Skorupka</h2>
+                                    <span class="team-leader__role">Angular Team Leader</span>
+                                    <div class="underline underline--tertiary"></div>
+                                    <p class="team-leader__message">
+                                        Zapraszam do Angular House Team’u, pomogę Ci we wdrożeniu się, doborze ciekawych zadań na początek oraz przedstawię Cie naszemu ekspresowi do kawy :)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
 
 
 
 
+                        
+                        
+                        <div class="job-offer__points-section">
+                            <h4 class="job-offer-points-title">What You'll Get?</h4>
+                            <div class="underline underline--long"></div>
+                            <ul class="job-offer__points-list">
+                                <li class="job-offer__points-list-item">
+                                    <span>Learning under the guidance of <span class="contents--bold">more experienced programmers - 15 people in the Angular team </span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Flexible options for technology development and selection</span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Interesting and challenging projects </span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Dedicated people for HTML / CSS in the team </span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Lack of corporate principles and a positive atmosphere at work </span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Comfortable working conditions (stocked kitchen, fun room, play room, etc.)</span>
+                                </li>
+                            </ul>
+                        </div>
 
 
 
-						<div class="job-offer__points-section">
-							<h4 class="job-offer-points-title">What and how will you do with us?</h4>
-							<div class="underline underline--long"></div>
-							<ul class="job-offer__points-list">
-								<li class="job-offer__points-list-item"><span>Design and create interfaces for web applications</span></li>
-								<li class="job-offer__points-list-item"><span>Breakdown of tasks: new functionalities: 80%, bugs and maintenance: 10%, meetings: 10%</span></li>
-								<li class="job-offer__points-list-item"><span>Technology stack of a typical project: Angular 7+, RxJS, TypeScript, NgRx, Angular CLI, plus: Angular Material</span></li>
-								<li class="job-offer__points-list-item"><span>Stand: Laptop DELL i7 quad, on stand + (Win or Linux) + SSD + 16GB RAM + 2 monitors 24 "height adjustable + very comfortable armchair.</span></li>
-							</ul>
-						</div>
+                        <div class="job-offer__points-section">
+                            <h4 class="job-offer-points-title">We want from You</h4>
+                            <div class="underline underline--long"></div>
+                            <ul class="job-offer__points-list">
+                             <li class="job-offer__points-list-item">
+                                    <span>5 or more years of development experience</span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Great knowledge of JavaScript, TypeScript and RxJS</span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Pro-active and pro team attitude to work</span>
+                                </li>
+                            </ul>
+                        </div>
 
-						<a href="#" class="button button--accented job-offer__apply-button">Apply here!</a>
-					</div>
-				</div>
-			</section>
-			<section class="side-column tablet-down-hide">
-				<section class="section section--job-offers job-offers--vertical">
-					<div class="section__row section__row--fdc section__row--first">
-						<h3 class="section__title">Other offers</h3>
-					</div>
-					<div class="section__row job-offers__grid">
-						<div class="job-offers__item">
-							<h4 class="job-offers__item-title">
-								<a href="/job-offer">Junior Angular Developer</a>
-							</h4>
-							<span class="job-offers__item-location">$-$$zł if you are Angular hothead $$$</span>
-							<div class="job-offers__item-tags">
-								<span class="chip">Html5/CSS3</span> <span class="chip">JavaScript</span> <span class="chip">Angular</span> <span class="chip">TypeScript</span> <span class="chip">RxJs</span>
 
-							</div>
-							<a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
-						</div>
-						<div class="job-offers__item">
-							<h4 class="job-offers__item-title">
-								<a href="/job-offer">Mid Angular Developer</a>
-							</h4>
-							<span class="job-offers__item-location">$$-$$$zł if you are Angular hothead $$$$</span>
-							<div class="job-offers__item-tags">
-								<span class="chip">Html5/CSS3</span> <span class="chip">JavaScript</span> <span class="chip">Angular</span> <span class="chip">TypeScript</span> <span class="chip">RxJs</span>
 
-							</div>
-							<a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
-						</div>
-					</div>
-				</section>
-			</section>
-		</div>
-		<div class="sections">
-			<section class="section section--our-benefits our-benefits three-column-section">
-				<div class="section__row section__row--fdc section__row--first">
-					<h3 class="section__title">Check our benefits!</h3>
-					<div class="underline"></div>
-				</div>
-				<div class="section__row three-column-section__wrapper">
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--fruits-drinks"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Fruits & drinks on deck!</h4>
-							<p class="three-column-section__item-description">Chopped, sliced or wedged, hard-cooked eggs are the basis of egg.</p>
-						</div>
-					</div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--leader-support"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Leader support</h4>
-							<p class="three-column-section__item-description">Recently, the US Federal government banned online casinos.</p>
-						</div>
-					</div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--remote-work"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Remote work</h4>
-							<p class="three-column-section__item-description">PThe Myspace page defines the individual, his or her characteristics.</p>
-						</div>
-					</div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--multisport"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Multisport</h4>
-							<p class="three-column-section__item-description">Computer users and programmers have become so accustomed.</p>
-						</div>
-					</div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--computer"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Computer</h4>
-							<p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
-						</div>
-					</div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--sharing-experience"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Sharing experience</h4>
-							<p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
-						</div>
-					</div>
+                        <div class="job-offer__points-section">
+                            <h4 class="job-offer-points-title">What and how will you do with us?</h4>
+                            <div class="underline underline--long"></div>
+                            <ul class="job-offer__points-list">
+                                <li class="job-offer__points-list-item">
+                                    <span>Design and create interfaces for web applications</span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Breakdown of tasks: new functionalities: 80%, bugs and maintenance: 10%, meetings: 10%</span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Technology stack of a typical project: Angular 7+, RxJS, TypeScript, NgRx, Angular CLI, plus: Angular Material</span>
+                                </li>
+                                <li class="job-offer__points-list-item">
+                                    <span>Stand: Laptop DELL i7 quad, on stand + (Win or Linux) + SSD + 16GB RAM + 2 monitors 24 "height adjustable + very comfortable armchair.</span>
+                                </li>
+                            </ul>
+                        </div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--flexible-hours"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Flexible hours</h4>
-							<p class="three-column-section__item-description">Scrum Team members respect each other to be capable, independent people</p>
-						</div>
-					</div>
+                        <a href="#" class="button button--accented job-offer__apply-button">Apply here!</a>
+                    </div>
+                </div>
+            </section>
+            <section class="side-column tablet-down-hide">
+                <section class="section section--job-offers job-offers--vertical">
+                    <div class="section__row section__row--fdc section__row--first">
+                        <h3 class="section__title">Other offers</h3>
+                    </div>
+                    <div class="section__row job-offers__grid">
+                        <div class="job-offers__item">
+                            <h4 class="job-offers__item-title"><a href="/job-offer">Senior Angular Developer</a></h4>
+                            <span class="job-offers__item-location">Remotely</span>
+                            <div class="job-offers__item-tags">
+                                <span class="chip">Html5</span>
+                                <span class="chip">CSS3</span>
+                                <span class="chip">Angular node 5</span>
+                                <span class="chip">swift</span>
+                                <span class="chip">C++</span>
+                                <span class="chip">Pascal</span>
+                                <span class="chip">Python</span>
+                                <span class="chip">Windows</span>
+                                <span class="chip">C2</span>
+                            </div>
+                            <a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
+                        </div>
+                        <div class="job-offers__item">
+                            <h4 class="job-offers__item-title"><a href="/job-offer">Senior Angular Developer</a></h4>
+                            <span class="job-offers__item-location">Remotely</span>
+                            <div class="job-offers__item-tags">
+                                <span class="chip">Html5</span>
+                                <span class="chip">CSS3</span>
+                                <span class="chip">Angular node 5</span>
+                                <span class="chip">swift</span>
+                                <span class="chip">C++</span>
+                                <span class="chip">Pascal</span>
+                                <span class="chip">Python</span>
+                                <span class="chip">Windows</span>
+                                <span class="chip">C2</span>
+                            </div>
+                            <a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
+                        </div>
+                        <div class="job-offers__item">
+                            <h4 class="job-offers__item-title"><a href="/job-offer">Senior Angular Developer</a></h4>
+                            <span class="job-offers__item-location">Remotely</span>
+                            <div class="job-offers__item-tags">
+                                <span class="chip">Html5</span>
+                                <span class="chip">CSS3</span>
+                                <span class="chip">Angular node 5</span>
+                                <span class="chip">swift</span>
+                                <span class="chip">C++</span>
+                                <span class="chip">Pascal</span>
+                                <span class="chip">Python</span>
+                                <span class="chip">Windows</span>
+                                <span class="chip">C2</span>
+                            </div>
+                            <a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="sections">
+            <section class="section section--our-benefits our-benefits three-column-section">
+                <div class="section__row section__row--fdc section__row--first">
+                    <h3 class="section__title">Check our benefits!</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="section__row three-column-section__wrapper">
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--fruits-drinks"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Fruits & drinks on deck!</h4>
+                            <p class="three-column-section__item-description">Chopped, sliced or wedged, hard-cooked eggs are the basis of egg.</p>
+                        </div>
+                    </div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--chill-room"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Chill room</h4>
-							<p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
-						</div>
-					</div>
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--leader-support"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Leader support</h4>
+                            <p class="three-column-section__item-description">Recently, the US Federal government banned online casinos.</p>
+                        </div>
+                    </div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--fridge"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Fridge with snacks!</h4>
-							<p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="section section--job-offers job-offers">
-				<div class="section__row section__row--fdc section__row--first">
-					<h3 class="section__title">Other offers</h3>
-					<div class="underline"></div>
-				</div>
-				<div class="section__row job-offers__grid">
-					<div class="job-offers__item">
-						<h4 class="job-offers__item-title">
-							<a href="/job-offer">Senior Angular Developer</a>
-						</h4>
-						<span class="job-offers__item-location">Remotely</span>
-						<div class="job-offers__item-tags">
-							<span class="chip">Html5</span> <span class="chip">CSS3</span> <span class="chip">Angular node 5</span> <span class="chip">swift</span> <span class="chip">C++</span> <span class="chip">Pascal</span> <span class="chip">Python</span> <span
-								class="chip">Windows</span> <span class="chip">C2</span>
-						</div>
-						<a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
-					</div>
-					<div class="job-offers__item">
-						<h4 class="job-offers__item-title">
-							<a href="/job-offer">Senior Angular Developer</a>
-						</h4>
-						<span class="job-offers__item-location">Remotely</span>
-						<div class="job-offers__item-tags">
-							<span class="chip">Html5</span> <span class="chip">CSS3</span> <span class="chip">Angular node 5</span> <span class="chip">swift</span> <span class="chip">C++</span> <span class="chip">Pascal</span> <span class="chip">Python</span> <span
-								class="chip">Windows</span> <span class="chip">C2</span>
-						</div>
-						<a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
-					</div>
-					<div class="job-offers__item">
-						<h4 class="job-offers__item-title">
-							<a href="/job-offer">Senior Angular Developer</a>
-						</h4>
-						<span class="job-offers__item-location">Remotely</span>
-						<div class="job-offers__item-tags">
-							<span class="chip">Html5</span> <span class="chip">CSS3</span> <span class="chip">Angular node 5</span> <span class="chip">swift</span> <span class="chip">C++</span> <span class="chip">Pascal</span> <span class="chip">Python</span> <span
-								class="chip">Windows</span> <span class="chip">C2</span>
-						</div>
-						<a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
-					</div>
-				</div>
-			</section>
-			<section class="section section--three-column-section three-column-section" id="scrum-values">
-				<div class="section__row section__row--fdc section__row--first">
-					<h3 class="section__title">Scrum values</h3>
-					<div class="underline"></div>
-				</div>
-				<div class="section__row three-column-section__wrapper">
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--courage"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Courage</h4>
-							<p class="three-column-section__item-description">Scrum Team members have courage to do the right thing and work on tough problems</p>
-						</div>
-					</div>
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--remote-work"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Remote work</h4>
+                            <p class="three-column-section__item-description">PThe Myspace page defines the individual, his or her characteristics.</p>
+                        </div>
+                    </div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--focus"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Focus</h4>
-							<p class="three-column-section__item-description">Everyone focuses on the work of the Sprint and the goals of the Scrum Team</p>
-						</div>
-					</div>
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--multisport"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Multisport</h4>
+                            <p class="three-column-section__item-description">Computer users and programmers have become so accustomed.</p>
+                        </div>
+                    </div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--commitment"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Commitment</h4>
-							<p class="three-column-section__item-description">People personally commit to acheving the goals of the Scrum Team</p>
-						</div>
-					</div>
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--computer"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Computer</h4>
+                            <p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
+                        </div>
+                    </div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--respect"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Respect</h4>
-							<p class="three-column-section__item-description">Scrum Team members respect each other to be capable, independent people</p>
-						</div>
-					</div>
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--sharing-experience"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Sharing experience</h4>
+                            <p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
+                        </div>
+                    </div>
 
-					<div class="three-column-section__item">
-						<div class="three-column-section__item-icon-container">
-							<i class="icon three-column-section__icon three-column-section__icon--openness"></i>
-						</div>
-						<div class="three-column-section__item-content">
-							<h4 class="three-column-section__item-title">Openness</h4>
-							<p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
-						</div>
-					</div>
-				</div>
-			</section>
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--flexible-hours"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Flexible hours</h4>
+                            <p class="three-column-section__item-description">Scrum Team members respect each other to be capable, independent people</p>
+                        </div>
+                    </div>
 
-			<section class="section section--find-us find-us">
-				<div class="section__row section__row--fdc section__row--first">
-					<h3 class="section__title">Find us on Social Media</h3>
-					<div class="underline"></div>
-				</div>
-				<div class="section__row find-us__wrapper">
-					<div class="find-us__block find-us__block--facebook">
-						<div class="find-us__block-overlay"></div>
-						<div class="find-us__block-items">
-							<img class="find-us__logo" src="assets/facebook-text-logo.svg">
-							<button class="button button--white find-us__button">
-								<i class="icon icon--fb-button"></i> <span> Find us on facebook!</span>
-							</button>
-						</div>
-					</div>
-					<div class="find-us__block find-us__block--instagram">
-						<div class="find-us__block-overlay"></div>
-						<div class="find-us__block-items">
-							<img class="find-us__logo" src="assets/instagram-text-logo.svg">
-							<button class="button button--white find-us__button">
-								<i class="icon icon--ig-button"></i> <span> Find us on instagram!</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<footer class="footer">
-			<div class="footer__row">
-				<div class="footer__logo">
-					<a href="/home"><img src="./assets/HouseofAngular.svg" alt="House of Angular"></a>
-				</div>
-				<div class="footer__shortcuts">
-					<ul class="nav footer-nav">
-						<li class="nav__item footer-nav__item"><a class="nav__item-link footer-nav__item-link" href="/knowledgebase">Baza wiedzy</a></li>
-						<li class="nav__item footer-nav__item"><a class="nav__item-link footer-nav__item-link" href="/open-source">Open source</a></li>
-						<li class="nav__item footer-nav__item"><a class="nav__item-link footer-nav__item-link" href="/blog">Blog</a></li>
-						<li class="nav__item footer-nav__item"><a class="nav__item-link footer-nav__item-link" href="/hire">Hire Us</a></li>
-						<li class="nav__item footer-nav__item"><a class="nav__item-link footer-nav__item-link" href="#">Privacy Policy</a></li>
-					</ul>
-				</div>
-				<div class="footer__social">
-					<a href="//www.facebook.com/House-of-Angular-344689403060210" target="_blank"> <i class="icon icon--facebook"></i>
-					</a>
-					<!-- <a href="#" target="_blank"><i class="icon icon--github"></i></a> -->
-				</div>
-			</div>
-			<div class="footer__row">
-				<div class="footer__copyright">
-					<span>Copyright &copy; 2020 House of Angular. All rights reserved.</span>
-				</div>
-			</div>
-		</footer> </main>
-	</div>
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--chill-room"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Chill room</h4>
+                            <p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
+                        </div>
+                    </div>
+
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--fridge"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Fridge with snacks!</h4>
+                            <p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--job-offers job-offers">
+                <div class="section__row section__row--fdc section__row--first">
+                    <h3 class="section__title">Other offers</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="section__row job-offers__grid">
+                    <div class="job-offers__item">
+                        <h4 class="job-offers__item-title"><a href="/job-offer">Senior Angular Developer</a></h4>
+                        <span class="job-offers__item-location">Remotely</span>
+                        <div class="job-offers__item-tags">
+                            <span class="chip">Html5</span>
+                            <span class="chip">CSS3</span>
+                            <span class="chip">Angular node 5</span>
+                            <span class="chip">swift</span>
+                            <span class="chip">C++</span>
+                            <span class="chip">Pascal</span>
+                            <span class="chip">Python</span>
+                            <span class="chip">Windows</span>
+                            <span class="chip">C2</span>
+                        </div>
+                        <a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
+                    </div>
+                    <div class="job-offers__item">
+                        <h4 class="job-offers__item-title"><a href="/job-offer">Senior Angular Developer</a></h4>
+                        <span class="job-offers__item-location">Remotely</span>
+                        <div class="job-offers__item-tags">
+                            <span class="chip">Html5</span>
+                            <span class="chip">CSS3</span>
+                            <span class="chip">Angular node 5</span>
+                            <span class="chip">swift</span>
+                            <span class="chip">C++</span>
+                            <span class="chip">Pascal</span>
+                            <span class="chip">Python</span>
+                            <span class="chip">Windows</span>
+                            <span class="chip">C2</span>
+                        </div>
+                        <a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
+                    </div>
+                    <div class="job-offers__item">
+                        <h4 class="job-offers__item-title"><a href="/job-offer">Senior Angular Developer</a></h4>
+                        <span class="job-offers__item-location">Remotely</span>
+                        <div class="job-offers__item-tags">
+                            <span class="chip">Html5</span>
+                            <span class="chip">CSS3</span>
+                            <span class="chip">Angular node 5</span>
+                            <span class="chip">swift</span>
+                            <span class="chip">C++</span>
+                            <span class="chip">Pascal</span>
+                            <span class="chip">Python</span>
+                            <span class="chip">Windows</span>
+                            <span class="chip">C2</span>
+                        </div>
+                        <a class="button button--outlined job-offers__apply-button" href="/job-offer">Apply Now!</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--three-column-section three-column-section" id="scrum-values">
+                <div class="section__row section__row--fdc section__row--first">
+                    <h3 class="section__title">Scrum values</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="section__row three-column-section__wrapper">
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--courage"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Courage</h4>
+                            <p class="three-column-section__item-description">Scrum Team members have courage to do the right thing and work on tough problems</p>
+                        </div>
+                    </div>
+
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--focus"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Focus</h4>
+                            <p class="three-column-section__item-description">Everyone focuses on the work of the Sprint and the goals of the Scrum Team</p>
+                        </div>
+                    </div>
+
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--commitment"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Commitment</h4>
+                            <p class="three-column-section__item-description">People personally commit to acheving the goals of the Scrum Team</p>
+                        </div>
+                    </div>
+
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--respect"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Respect</h4>
+                            <p class="three-column-section__item-description">Scrum Team members respect each other to be capable, independent people</p>
+                        </div>
+                    </div>
+
+                    <div class="three-column-section__item">
+                        <div class="three-column-section__item-icon-container">
+                            <i class="icon three-column-section__icon three-column-section__icon--openness"></i>
+                        </div>
+                        <div class="three-column-section__item-content">
+                            <h4 class="three-column-section__item-title">Openness</h4>
+                            <p class="three-column-section__item-description">The Scrum Team and its stakeholders agree to be open about all the work and the challenges with performing the work</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--find-us find-us">
+                <div class="section__row section__row--fdc section__row--first">
+                    <h3 class="section__title">Find us on Social Media</h3>
+                    <div class="underline"></div>
+                </div>
+                <div class="section__row find-us__wrapper">
+                    <div class="find-us__block find-us__block--facebook">
+                        <div class="find-us__block-overlay"></div>
+                        <div class="find-us__block-items">
+                            <img class="find-us__logo" src="assets/facebook-text-logo.svg">
+                            <button class="button button--white find-us__button">
+                                <i class="icon icon--fb-button"></i>
+                                <span> Find us on facebook!</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="find-us__block find-us__block--instagram">
+                        <div class="find-us__block-overlay"></div>
+                        <div class="find-us__block-items">
+                            <img class="find-us__logo" src="assets/instagram-text-logo.svg">
+                            <button class="button button--white find-us__button">
+                                <i class="icon icon--ig-button"></i>
+                                <span> Find us on instagram!</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__logo">
+                    <a href="/home"><img src="./assets/HouseofAngular.svg" alt="House of Angular"></a>
+                </div>
+                <div class="footer__shortcuts">
+                    <ul class="nav footer-nav">
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/knowledgebase">Baza wiedzy</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/open-source">Open source</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="/hire">Hire Us</a>
+                        </li>
+                        <li class="nav__item footer-nav__item">
+                            <a class="nav__item-link footer-nav__item-link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="//www.facebook.com/House-of-Angular-344689403060210" target="_blank">
+                        <i class="icon icon--facebook"></i>
+                    </a>
+                    <!-- <a href="#" target="_blank"><i class="icon icon--github"></i></a> -->
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__copyright">
+                    <span>Copyright &copy; 2020 House of Angular. All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
 </body>
 <script src="js/main.js" type="module"></script>
 </html>
