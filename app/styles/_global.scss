@@ -56,7 +56,7 @@ body {
 }
 
 @media (min-width: 1025px) {
-  .desktop-hide {
+  body .desktop-hide {
     display: none;
   }
 }
