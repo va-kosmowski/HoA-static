@@ -20,7 +20,6 @@ i.icon--ig-button {
 
     .find-us__block-overlay {
       background-color: $darker-color;
-      display: none;
     }
 
     .find-us__logo {
@@ -37,7 +36,6 @@ i.icon--ig-button {
 
     .find-us__block-overlay {
       background-color: #670C19;
-      display: none;
     }
 
     .find-us__logo {
@@ -52,7 +50,7 @@ i.icon--ig-button {
 
 .find-us__block-overlay {
   position: absolute;
-  opacity: 0.9;
+  opacity: 0.75;
   @include size(100%);
 }
 

@@ -64,7 +64,8 @@
 
 .job-offer__team-leader {
   width: 100%;
-  @include flex(center, flex-start);
+  @include flex(center, center);
+  flex-direction: column;
   padding: 5rem 0;
 
   .team-leader__wrapper {
@@ -99,6 +100,24 @@
     flex: 1;
     @include flex(flex-start, stretch);
     flex-direction: column;
+  }
+
+  .team-leader__team-members {
+    @include flex(flex-start, flex-start);
+    width: 100%;
+    padding-top: 4.5rem;
+    padding-left: 3.5rem;
+
+    .team-member__avatar {
+      max-width: 5rem;
+      width: auto;
+      height: auto;
+      margin-bottom: 0;
+
+      + .team-member__avatar {
+        margin-left: 0.8rem;
+      }
+    }
   }
 }
 
@@ -136,8 +155,6 @@
   }
 
   .job-offer__team-leader {
-    flex-direction: column;
-    align-items: center;
     padding: 4rem 5rem;
 
     .team-leader__wrapper {
